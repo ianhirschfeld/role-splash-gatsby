@@ -1,0 +1,211 @@
+p {
+  margin-bottom: 36px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.inner-content {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.header-content {
+  max-width: 1026px;
+}
+
+.pillars-content {
+  max-width: 1230px;
+  padding: 18px 0;
+}
+
+.creators-content {
+  max-width: 680px;
+}
+
+.logo {
+  width: 214px;
+  height: 221px;
+  margin: 0 auto 72px;
+  background: url('../images/RoleLogo.png') no-repeat 0 0;
+  background-size: contain;
+  text-indent: 100%;
+  overflow: hidden;
+}
+
+.section {
+  padding: 108px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.slanted-section {
+  padding: 110px 0;
+  text-align: center;
+}
+
+.slant {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+}
+
+.slant:before,
+.slant:after {
+  width: 0;
+  display: block;
+  position: absolute;
+  left: 0;
+  border-style: solid;
+  border-width: 0 100vw 200px 0;
+  content: '';
+}
+
+.slant:before {
+  top: -200px;
+  border-color: transparent transparent white transparent;
+}
+
+.slant:after {
+  bottom: -200px;
+  border-color: transparent white transparent transparent;
+}
+
+.slanted-section.slanted-section-footer {
+  padding-bottom: 0;
+}
+
+.slanted-section-footer .slant {
+    padding-bottom: 108px;
+}
+
+.slanted-section-footer .slant:after {
+  border-width: 0;
+}
+
+.section-heading,
+.slanted-heading {
+  margin-bottom: 36px;
+}
+
+.section-heading {
+  color: #fff;
+}
+
+.slanted-heading {
+  color: #ff006b;
+}
+
+.form {
+  margin-top: 36px;
+}
+
+.form-heading {
+  margin-bottom: 9px;
+}
+
+.email {
+  height: 36px !important;
+  padding: 2px 18px 4px !important;
+  background: none !important;
+  border: 2px solid #fff !important;
+  border-radius: 0 !important;
+  border-top-left-radius: 36px !important;
+  border-bottom-left-radius: 36px !important;
+  color: #fff !important;
+}
+
+.slanted-email-form .email {
+  border-color: #ff006b !important;
+  color: #000 !important;
+}
+
+.email::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.slanted-email-form .email::placeholder {
+  color: rgba(0,0,0,0.5);
+}
+
+.submit {
+  height: 36px !important;
+  margin-left: -18px !important;
+  padding: 1px 18px 5px !important;
+  border: 2px solid #fff !important;
+  border-radius: 36px !important;
+  background: #fff !important;
+  color: #ff006b !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  transition: all 0.1s ease-in-out !important;
+  line-height: inherit !important;
+  letter-spacing: normal !important;
+}
+
+.submit:hover,
+.submit:focus {
+  border-color: #ff006b !important;
+  background: #ff006b !important;
+  color: #fff !important;
+}
+
+.slanted-email-form .submit {
+  background: #ff006b !important;
+  border-color: #ff006b !important;
+  color: #fff !important;
+}
+
+.slanted-email-form .submit:hover,
+.slanted-email-form .submit:focus {
+  border-color: #eee !important;
+  background: #eee !important;
+  color: #ff006b !important;
+}
+
+.arrow {
+  width: 22px;
+  height: 28px;
+  margin: 36px auto 0;
+  background: url('../images/DoubleArrow.png') no-repeat 0 0;
+  background-size: contain;
+}
+
+.pillars {}
+
+.pillar {
+  width: 33.33%;
+  padding: 0 36px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.pillar-image-container {
+  width: 100%;
+  max-width: 346px;
+}
+
+.pillar-image {
+  height: 0;
+  padding-top: 100%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  overflow: hidden;
+}
+
+.image-play {
+  background-image: url('../images/PlaySomethingNew.png');
+}
+
+.image-table {
+  background-image: url('../images/FillYourTable.png');
+}
+
+.image-role {
+  background-image: url('../images/RoleEffortlessly.png');
+}
