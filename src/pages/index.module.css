@@ -18,7 +18,7 @@ p:last-child {
 }
 
 .pillars-content {
-  max-width: 1230px;
+  max-width: 1232px;
   padding: 18px 0;
 }
 
@@ -161,8 +161,8 @@ p:last-child {
 
 .slanted-email-form .submit:hover,
 .slanted-email-form .submit:focus {
-  border-color: #eee !important;
-  background: #eee !important;
+  border-color: #ff006b !important;
+  background: #fff !important;
   color: #ff006b !important;
 }
 
@@ -183,9 +183,14 @@ p:last-child {
   vertical-align: top;
 }
 
+.pillar-heading {}
+
+.pillar-body {}
+
 .pillar-image-container {
   width: 100%;
   max-width: 346px;
+  margin: 0 auto;
 }
 
 .pillar-image {
@@ -208,4 +213,94 @@ p:last-child {
 
 .image-role {
   background-image: url('../images/RoleEffortlessly.png');
+}
+
+@media only screen and (max-width: 1230px) {
+  .pillar-heading {
+    font-size: 16px;
+  }
+
+  .pillar-body {
+    font-size: 14px;
+  }
+
+  .pillar-image-container {
+    max-width: 280px;
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  .pillar {
+    width: 50%;
+  }
+
+  .pillar:first-child {
+    padding-right: 18px;
+  }
+
+  .pillar:nth-child(2) {
+    padding-left: 18px;
+  }
+
+  .pillar:last-child {
+    margin-top: 54px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .email {
+    width: 350px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .submit {
+    width: auto !important;
+  }
+}
+
+@media only screen and (max-width: 696px) {
+  .pillar {
+    width: 100%;
+    max-width: 380px;
+    margin-top: 54px;
+    padding: 0 !important;
+  }
+
+  .pillar:first-child {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 667px) {
+  .inner-content {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .email {
+    width: 240px !important;
+  }
+
+  .section {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+
+  .slanted-section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .slant:before,
+  .slant:after {
+    border-width: 0 100vw 100px 0;
+  }
+
+  .slant:before {
+    top: -100px;
+  }
+
+  .slant:after {
+    bottom: -100px;
+  }
 }

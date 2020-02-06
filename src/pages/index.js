@@ -30,7 +30,7 @@ export default ({ data }) => {
                     <input type='email' defaultValue='' name='EMAIL' className={['email', styles.email].join(' ')} id='mce-EMAIL' placeholder='Email address' required />
                     {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups */}
                     <div style={mailchimpHiddenStyle} aria-hidden='true'><input type='text' name='b_3b7974721fb3e8f4f031367db_7bd197d227' tabIndex='-1' defaultValue='' /></div>
-                    <div className='clear'><input type='submit' value='Sign up!' name='subscribe' id='mc-embedded-subscribe' className={['button', styles.submit].join(' ')} /></div>
+                    <input type='submit' value='Sign up!' name='subscribe' id='mc-embedded-subscribe' className={['button', styles.submit].join(' ')} />
                   </div>
                 </form>
               </div>
@@ -46,18 +46,18 @@ export default ({ data }) => {
               <h2 className={['heading1', styles.slantedHeading].join(' ')}>You can play with us</h2>
               <div className={styles.pillars}>
                 <div className={styles.pillar}>
-                  <h3 className='heading2'>Play Something New</h3>
-                  <p>It doesn’t matter if you’re a brand new player or a seasoned veteran. The Role marketplace will help you discover, explore, and learn new games that meet your style.</p>
+                  <h3 className={['heading2', styles.pillarHeading].join(' ')}>Play Something New</h3>
+                  <p className={styles.pillarBody}>It doesn’t matter if you’re a brand new player or a seasoned veteran. The Role marketplace will help you discover, explore, and learn new games that meet your style.</p>
                   <div className={styles.pillarImageContainer}><div className={[styles.pillarImage, styles.imagePlay].join(' ')} /></div>
                 </div>
                 <div className={styles.pillar}>
-                  <h3 className='heading2'>Fill Your Table</h3>
-                  <p>Looking for people to play with? Need a Game Master to help run your game? Our community matching tools will help you find people and get playing quickly.</p>
+                  <h3 className={['heading2', styles.pillarHeading].join(' ')}>Fill Your Table</h3>
+                  <p className={styles.pillarBody}>Looking for people to play with? Need a Game Master to help run your game? Our community matching tools will help you find people and get playing quickly.</p>
                   <div className={styles.pillarImageContainer}><div className={[styles.pillarImage, styles.imageTable].join(' ')} /></div>
                 </div>
                 <div className={styles.pillar}>
-                  <h3 className='heading2'>Role Effortlessly</h3>
-                  <p>Online play that is easy, seamless, and limitless. Role takes the complexity out of the tools, so you can focus on what really matters: playing with people you love.</p>
+                  <h3 className={['heading2', styles.pillarHeading].join(' ')}>Role Effortlessly</h3>
+                  <p className={styles.pillarBody}>Online play that is easy, seamless, and limitless. Role takes the complexity out of the tools, so you can focus on what really matters: playing with people you love.</p>
                   <div className={styles.pillarImageContainer}><div className={[styles.pillarImage, styles.imageRole].join(' ')} /></div>
                 </div>
               </div>
@@ -88,7 +88,7 @@ export default ({ data }) => {
                     <input type='email' defaultValue='' name='EMAIL' className={['email', styles.email].join(' ')} id='mce-EMAIL' placeholder='Email address' required />
                     {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups */}
                     <div style={mailchimpHiddenStyle} aria-hidden='true'><input type='text' name='b_3b7974721fb3e8f4f031367db_7bd197d227' tabIndex='-1' defaultValue='' /></div>
-                    <div className='clear'><input type='submit' value='Sign up!' name='subscribe' id='mc-embedded-subscribe' className={['button', styles.submit].join(' ')} /></div>
+                    <input type='submit' value='Sign up!' name='subscribe' id='mc-embedded-subscribe' className={['button', styles.submit].join(' ')} />
                   </div>
                 </form>
               </div>

@@ -63,3 +63,17 @@ a {
   padding: 0;
   list-style: none;
 }
+
+@media only screen and (max-width: 667px) {
+  .heading1 {
+      font-size: 17px;
+  }
+
+  .heading2 {
+    font-size: 15px;
+  }
+
+  .heading3 {
+    font-size: 15px;
+  }
+}
