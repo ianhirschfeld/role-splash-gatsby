@@ -1,0 +1,76 @@
+.email {
+  height: 36px !important;
+  padding: 2px 18px 4px !important;
+  background: none !important;
+  border: 2px solid #fff !important;
+  border-radius: 0 !important;
+  border-top-left-radius: 36px !important;
+  border-bottom-left-radius: 36px !important;
+  color: #fff !important;
+  font-family: 'europa', 'sans-serif' !important;
+}
+
+.slanted-email-form .email {
+  border-color: #ff006b !important;
+  color: #000 !important;
+}
+
+.email::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+.slanted-email-form .email::placeholder {
+  color: rgba(0,0,0,0.5);
+}
+
+.submit {
+  height: 36px !important;
+  margin-left: -18px !important;
+  padding: 1px 18px 5px !important;
+  border: 2px solid #fff !important;
+  border-radius: 36px !important;
+  background: #fff !important;
+  color: #ff006b !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+  transition: all 0.1s ease-in-out !important;
+  line-height: inherit !important;
+  letter-spacing: normal !important;
+}
+
+.submit:hover,
+.submit:focus {
+  border-color: #ff006b !important;
+  background: #ff006b !important;
+  color: #fff !important;
+}
+
+.slanted-email-form .submit {
+  background: #ff006b !important;
+  border-color: #ff006b !important;
+  color: #fff !important;
+}
+
+.slanted-email-form .submit:hover,
+.slanted-email-form .submit:focus {
+  border-color: #ff006b !important;
+  background: #fff !important;
+  color: #ff006b !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .email {
+    width: 350px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .submit {
+    width: auto !important;
+  }
+}
+
+@media only screen and (max-width: 667px) {
+  .email {
+    width: 240px !important;
+  }
+}

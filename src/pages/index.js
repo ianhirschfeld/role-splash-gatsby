@@ -2,14 +2,12 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Mailchimp from '../components/mailchimp/mailchimp'
+import GoogleForm from '../components/google-form/google-form'
 
 import styles from './index.module.css'
 
 export default ({ data }) => {
-  const mailchimpHiddenStyle = {
-    position: 'absolute',
-    left: '-5000px'
-  }
   return (
     <Layout>
       <SEO title='Role - You Can Play With Us' titleTemplate={`%s`} />
@@ -22,18 +20,7 @@ export default ({ data }) => {
             <h2 className='heading1'>Welcome Home</h2>
             <div className={styles.form}>
               <div className={['heading3', styles.formHeading].join(' ')}>Join us and learn more</div>
-              {/* Begin Mailchimp Signup Form */}
-              <div id='mc_embed_signup'>
-                <form action='https://thesoapcollective.us9.list-manage.com/subscribe/post?u=3b7974721fb3e8f4f031367db&amp;id=7bd197d227' method='post' id='mc-embedded-subscribe-form' name='mc-embedded-subscribe-form' className='validate' target='_blank' noValidate>
-                  <div id='mc_embed_signup_scroll'>
-                    <input type='email' defaultValue='' name='EMAIL' className={['email', styles.email].join(' ')} id='mce-EMAIL' placeholder='Email address' required />
-                    {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups */}
-                    <div style={mailchimpHiddenStyle} aria-hidden='true'><input type='text' name='b_3b7974721fb3e8f4f031367db_7bd197d227' tabIndex='-1' defaultValue='' /></div>
-                    <input type='submit' value='Sign up!' name='subscribe' id='mc-embedded-subscribe' className={['button', styles.submit].join(' ')} />
-                  </div>
-                </form>
-              </div>
-              {/* <!--End mc_embed_signup--> */}
+              <Mailchimp />
             </div>
           </header>
           <div className={styles.arrow} />
@@ -70,6 +57,7 @@ export default ({ data }) => {
             <h3 className='heading2'>Join the Role Creators Program</h3>
             <p>Role is looking for the best new game creators who want to share their work with the world. More than just a marketplace - we’re invested in helping people discover new content from diverse voices, and giving everyone the tools to easily understand and learn new games.</p>
             <p><strong>Whether you’re an indie designer or an established publisher, we want to help people connect with the worlds you’re dreaming of.</strong></p>
+            <GoogleForm />
           </div>
         </div>
 
@@ -80,18 +68,7 @@ export default ({ data }) => {
               <h3 className='heading2'>Your Next Great Adventure Awaits</h3>
               <p>Role is launching in 2020, with Early Access opening soon.<br />Be among the first to know, and follow along for future updates!</p>
               <div className={['heading3', styles.formHeading].join(' ')}>Join the Role Community</div>
-              {/* Begin Mailchimp Signup Form */}
-              <div id='mc_embed_signup' className={styles.slantedEmailForm}>
-                <form action='https://thesoapcollective.us9.list-manage.com/subscribe/post?u=3b7974721fb3e8f4f031367db&amp;id=7bd197d227' method='post' id='mc-embedded-subscribe-form' name='mc-embedded-subscribe-form' className='validate' target='_blank' noValidate>
-                  <div id='mc_embed_signup_scroll'>
-                    <input type='email' defaultValue='' name='EMAIL' className={['email', styles.email].join(' ')} id='mce-EMAIL' placeholder='Email address' required />
-                    {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups */}
-                    <div style={mailchimpHiddenStyle} aria-hidden='true'><input type='text' name='b_3b7974721fb3e8f4f031367db_7bd197d227' tabIndex='-1' defaultValue='' /></div>
-                    <input type='submit' value='Sign up!' name='subscribe' id='mc-embedded-subscribe' className={['button', styles.submit].join(' ')} />
-                  </div>
-                </form>
-              </div>
-              {/* <!--End mc_embed_signup--> */}
+              <Mailchimp isSlanted />
             </div>
           </div>
         </div>
