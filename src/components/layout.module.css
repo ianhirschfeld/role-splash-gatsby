@@ -1,4 +1,15 @@
-.page-wrapper {
-  background: url('../images/RoleBackground.jpg') no-repeat fixed;
+.page-background {
+  width: 100vw;
+  height: 100vh;
+  background: url('../images/RoleBackground.jpg') no-repeat center center;
   background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.page-wrapper {
+  position: relative;
+  z-index: 2;
 }

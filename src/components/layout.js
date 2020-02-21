@@ -13,6 +13,7 @@ const Layout = ({ children }) => {
         <link href='https://use.typekit.net/ynz5mmn.css' rel='stylesheet' />
         <link href='//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css' rel='stylesheet' type='text/css' />
       </Helmet>
+      <div className={styles.pageBackground} />
       <div className={styles.pageWrapper}>
         {children}
       </div>
