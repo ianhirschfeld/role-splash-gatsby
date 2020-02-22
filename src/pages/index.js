@@ -16,7 +16,7 @@ export default ({ data }) => {
           <header className={[styles.innerContent, styles.headerContent].join(' ')}>
             <h1 className={styles.logo}>Role</h1>
             <p className='heading2'>We’re Creating the world’s premier online Role Playing Community. Discover new games from the most passionate creators, meet new friends and adventure together. Anyone can play, Everyone is welcome.</p>
-            <p className='heading2'>Every story, every world, every version of you.<br />This is your Game Table. This is Role.</p>
+            <p className='heading2'>Every world, every story, every version of you.<br />This is your Game Table. This is Role.</p>
             <h2 className='heading1'>Welcome Home</h2>
             <div className={styles.form}>
               <div className={['heading3', styles.formHeading].join(' ')}>Join us and learn more</div>
@@ -72,6 +72,10 @@ export default ({ data }) => {
             </div>
           </div>
         </div>
+
+        <footer className={styles.footer}>
+          <div className={styles.footerContent}>&copy; 2020 Role, Inc. All rights reserved.</div>
+        </footer>
       </article>
     </Layout>
   )
