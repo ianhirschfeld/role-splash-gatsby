@@ -10,7 +10,7 @@ import styles from './index.module.css'
 export default ({ data }) => {
   return (
     <Layout>
-      <SEO title='Role - You Can Play With Us' titleTemplate={`%s`} />
+      <SEO title='Role - Every world, every story, every version of you.' titleTemplate={`%s`} />
       <article>
         <div className={styles.section}>
           <header className={[styles.innerContent, styles.headerContent].join(' ')}>

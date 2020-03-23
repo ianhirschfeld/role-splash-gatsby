@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Role',
     description: 'We’re creating the world’s premier online Role Playing Community. Discover new games from the most passionate creators, meet new friends and adventure together. Anyone can play, Everyone is welcome.',
-    author: '@playrole',
+    author: '@roleapp',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
