@@ -13,3 +13,60 @@
   position: relative;
   z-index: 2;
 }
+
+.page-nav {
+  max-width: 1232px;
+  margin: 0 auto;
+  padding: 36px 36px 0;
+  display: flex;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  margin-right: 18px;
+  display: block;
+  overflow: hidden;
+  text-indent: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.icon-facebook {
+  background-image: url('../images/FacebookIcon.png');
+}
+
+.icon-twitter {
+  background-image: url('../images/TwitterIcon.png');
+}
+
+.icon-twitch {
+  background-image: url('../images/TwitchIcon.png');
+}
+
+.button {
+  height: 36px;
+  padding: 6px 18px 0;
+  margin-left: auto;
+  display: block;
+  border-radius: 36px;
+  background: #fff;
+  color: #ff006b;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.1s ease-in-out;
+}
+
+.button:hover,
+.button:focus {
+  background: #ff006b;
+  color: #fff;
+}
+
+@media only screen and (max-width: 667px) {
+  .page-nav {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
