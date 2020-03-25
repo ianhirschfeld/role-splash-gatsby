@@ -19,6 +19,7 @@ const Layout = ({ children }) => {
           <a className={[styles.socialIcon, styles.iconFacebook].join(' ')} href='https://www.facebook.com/PlayRoleApp'>Facebook</a>
           <a className={[styles.socialIcon, styles.iconTwitter].join(' ')} href='https://twitter.com/RoleApp'>Twitter</a>
           <a className={[styles.socialIcon, styles.iconTwitch].join(' ')} href='https://twitch.tv/PlayRoleApp'>Twitch</a>
+          <a className={styles.button} href='https://blog.playrole.com'>Blog</a>
         </nav>
         {children}
       </div>
