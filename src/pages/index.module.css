@@ -17,19 +17,6 @@ p:last-child {
   max-width: 1026px;
 }
 
-.footer {
-  background: #fff;
-}
-
-.footer-content {
-  width: 100%;
-  max-width: 680px;
-  margin: 0 auto;
-  padding: 18px 36px;
-  font-size: 12px;
-  text-align: center;
-}
-
 .pillars-content {
   max-width: 1232px;
   padding: 36px 0;
@@ -167,6 +154,15 @@ p:last-child {
 
 .image-role {
   background-image: url('../images/RoleEffortlessly.png');
+}
+
+.legal-content {
+  margin-top: 36px;
+  text-align: left;
+}
+
+.legal-content p {
+  margin-bottom: 18px;
 }
 
 @media only screen and (max-width: 1230px) {

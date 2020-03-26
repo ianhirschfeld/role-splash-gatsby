@@ -1,6 +1,4 @@
 .content {
-  width: 100vw;
-  height: 100vh;
   padding: 72px 18px;
   color: #fff;
   text-align: center;
@@ -24,17 +22,4 @@
 .content h2,
 .content h3 {
   margin-bottom: 10px;
-}
-
-.footer {
-  color: #fff;
-}
-
-.footer-content {
-  width: 100%;
-  max-width: 680px;
-  margin: 108px auto 0;
-  padding: 18px 36px;
-  font-size: 12px;
-  text-align: center;
 }
