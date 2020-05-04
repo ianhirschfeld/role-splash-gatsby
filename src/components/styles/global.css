@@ -8,17 +8,29 @@ body {
   color: #000;
 }
 
-body, input {
+body,
+input {
   font-family: 'europa', 'sans-serif';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -39,7 +51,7 @@ a:focus {
   font-size: 28px;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 7px;
+  letter-spacing: 5px;
 }
 
 .heading2 {
@@ -47,7 +59,7 @@ a:focus {
   font-size: 20px;
   font-weight: normal;
   text-transform: uppercase;
-  letter-spacing: 7px;
+  letter-spacing: 5px;
 }
 
 .heading3 {
