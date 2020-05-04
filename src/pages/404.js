@@ -8,11 +8,14 @@ import styles from './404.module.css'
 
 const NotFoundPage = () => (
   <Layout articleClassNames={[styles.content]} isPlainFooter>
-    <SEO title='404: Not found' />
+    <SEO title="404: Not found" />
     <h1 className={styles.logo}>Role</h1>
-    <h2 className='heading1'>Whoops!</h2>
-    <h3 className='heading2'>Looks like you're trying to travel off the table</h3>
-    <p>This is a non-existent page. In fact, there is only one page to this site. And it is <Link to='/'>right here</Link>.</p>
+    <h2 className="heading1">Whoops!</h2>
+    <h3 className="heading2">Looks like you're trying to travel off the table</h3>
+    <p>
+      This is a non-existent page. In fact, there is only one page to this site. And it is{' '}
+      <Link to="/">right here</Link>.
+    </p>
   </Layout>
 )
 
