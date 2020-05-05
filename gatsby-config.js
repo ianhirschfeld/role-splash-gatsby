@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Role',
-    description: 'We’re creating the world’s premier online Role Playing Community. Discover new games from the most passionate creators, meet new friends and adventure together. Anyone can play, Everyone is welcome.',
+    description:
+      'We’re creating the world’s premier online Role Playing Community. Discover new games from the most passionate creators, meet new friends and adventure together. Anyone can play, Everyone is welcome.',
     author: '@roleapp',
   },
   plugins: [
@@ -32,6 +33,13 @@ module.exports = {
       options: {
         trackingId: 'UA-159341071-1',
         head: true,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: 'GTM-555ZLR8',
+        includeInDevelopment: false,
       },
     },
     {
