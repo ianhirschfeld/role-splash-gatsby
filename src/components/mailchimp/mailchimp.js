@@ -45,7 +45,7 @@ const Mailchimp = ({ isSlanted }) => {
             value="Sign up!"
             name="subscribe"
             id="mc-embedded-subscribe"
-            className={['button', styles.submit].join(' ')}
+            className={`button is-pink ${styles.submit}`}
           />
         </div>
       </form>

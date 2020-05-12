@@ -79,7 +79,7 @@ p:last-child {
 }
 
 .slanted-section-footer .slant {
-    padding-bottom: 108px;
+  padding-bottom: 108px;
 }
 
 .slanted-section-footer .slant:after {
@@ -99,6 +99,35 @@ p:last-child {
   color: #ff006b;
 }
 
+.banner {
+  max-width: 1000px;
+  height: 562px;
+  margin-bottom: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../images/InterfaceBanner.jpg') no-repeat center center;
+  background-size: cover;
+  border-radius: 18px;
+}
+
+.banner-content {
+}
+
+.banner-pretitle {
+  font-size: 14px;
+}
+
+.banner-title {
+  margin-bottom: 16px;
+  color: #c1d94f;
+}
+
+.banner-button {
+  width: 484px;
+  display: block;
+}
+
 .form {
   margin-top: 36px;
 }
@@ -115,7 +144,8 @@ p:last-child {
   background-size: contain;
 }
 
-.pillars {}
+.pillars {
+}
 
 .pillar {
   width: 33.33%;
@@ -124,9 +154,11 @@ p:last-child {
   vertical-align: top;
 }
 
-.pillar-heading {}
+.pillar-heading {
+}
 
-.pillar-body {}
+.pillar-body {
+}
 
 .pillar-image-container {
   width: 100%;
@@ -145,15 +177,15 @@ p:last-child {
 }
 
 .image-play {
-  background-image: url('../images/PlaySomethingNew.png');
+  background-image: url('../images/PlaySomethingNewInterface.png');
 }
 
 .image-table {
-  background-image: url('../images/FillYourTable.png');
+  background-image: url('../images/FillYourTableInterface.png');
 }
 
 .image-role {
-  background-image: url('../images/RoleEffortlessly.png');
+  background-image: url('../images/RoleEffortlesslyInterface.png');
 }
 
 .legal-content {
@@ -237,5 +269,9 @@ p:last-child {
 
   .slant:after {
     bottom: -100px;
+  }
+
+  .banner-button {
+    width: auto;
   }
 }

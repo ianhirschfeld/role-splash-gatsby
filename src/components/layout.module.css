@@ -56,26 +56,6 @@
   background-image: url('../images/TwitchIcon.png');
 }
 
-.button {
-  height: 36px;
-  padding: 6px 18px 0;
-  margin-left: auto;
-  display: block;
-  border-radius: 36px;
-  background: #fff;
-  color: #ff006b;
-  font-size: 18px;
-  font-weight: bold;
-  transition: all 0.1s ease-in-out;
-}
-
-.button:hover,
-.button:focus {
-  background: #ff006b;
-  color: #fff;
-  text-decoration: none;
-}
-
 .footer {
   background: #fff;
 }

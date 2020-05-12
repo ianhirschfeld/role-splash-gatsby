@@ -45,7 +45,7 @@ const GoogleForm = () => {
         aria-label="Tell us more about you..."
         name="entry.962014774"
       />
-      <input type="submit" value="Contact us!" className={['button', styles.submit].join(' ')} />
+      <input type="submit" value="Contact us!" className={`button is-pink ${styles.submit}`} />
     </form>
   )
 }

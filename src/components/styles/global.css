@@ -82,6 +82,39 @@ a:focus {
   list-style: none;
 }
 
+.button {
+  height: 36px;
+  padding: 0 18px;
+  display: block;
+  border-radius: 36px;
+  background: #fff;
+  border: none;
+  color: #ff006b;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 36px;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background: #ff006b;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button.is-pink {
+  background: #ff006b;
+  color: #fff;
+}
+
+.button.is-pink:hover,
+.button.is-pink:focus {
+  background: #fff;
+  color: #ff006b;
+}
+
 @media only screen and (max-width: 667px) {
   .heading1 {
     font-size: 17px;
