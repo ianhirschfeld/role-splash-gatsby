@@ -16,13 +16,13 @@ export default ({ data }) => {
           <h1 className={styles.logo}>Role</h1>
           <div className={styles.banner}>
             <div className={styles.bannerContent}>
-              <div className={`heading1 ${styles.bannerPretitle}`}>Coming soon to</div>
+              <div className={`heading1 ${styles.bannerPretitle}`}>Now live on</div>
               <div className={`heading1 ${styles.bannerTitle}`}>Kickstarter</div>
               <a
-                href="https://www.kickstarter.com/projects/role/role-a-new-kind-of-platform-for-the-rpg-community"
+                href="https://www.kickstarter.com/projects/role/role-a-new-kind-of-platform-for-the-rpg-community?ref=3pr7wq"
                 className={`button is-pink ${styles.bannerButton}`}
               >
-                Follow On Kickstarter!
+                Back us on Kickstarter!
               </a>
             </div>
           </div>
