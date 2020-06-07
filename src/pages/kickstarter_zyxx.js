@@ -10,7 +10,7 @@ export default ({ data }) => {
       <Helmet>
         <meta
           http-equiv="refresh"
-          content="0;url=https://www.playrole.com/kickstarter_zyxx?utm_source=maximumfun.org&utm_medium=podcast&utm_campaign=zyxx"
+          content="0;url=https://www.kickstarter.com/projects/role/role-a-new-kind-of-platform-for-the-rpg-community?ref=8cfxa3"
         />
       </Helmet>
       <Layout articleClassNames={[styles.content]} isPlainFooter>
@@ -18,7 +18,7 @@ export default ({ data }) => {
         <h2 className="heading1">Thank you for your support!</h2>
         <p>
           You should be redirected to our Kickstarter in 1 second. If you aren't,{' '}
-          <a href="https://www.playrole.com/kickstarter_zyxx?utm_source=maximumfun.org&utm_medium=podcast&utm_campaign=zyxx">
+          <a href="https://www.kickstarter.com/projects/role/role-a-new-kind-of-platform-for-the-rpg-community?ref=8cfxa3">
             click here
           </a>
           .
