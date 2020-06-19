@@ -14,18 +14,6 @@ export default ({ data }) => {
       <div className={styles.section}>
         <header className={[styles.innerContent, styles.headerContent].join(' ')}>
           <h1 className={styles.logo}>Role</h1>
-          <div className={styles.banner}>
-            <div className={styles.bannerContent}>
-              <div className={`heading1 ${styles.bannerPretitle}`}>Now live on</div>
-              <div className={`heading1 ${styles.bannerTitle}`}>Kickstarter</div>
-              <a
-                href="https://www.kickstarter.com/projects/role/role-a-new-kind-of-platform-for-the-rpg-community?ref=3pr7wq"
-                className={`button is-pink ${styles.bannerButton}`}
-              >
-                Back us on Kickstarter!
-              </a>
-            </div>
-          </div>
           <p className="heading2">
             We’re Creating the world’s premier online Role Playing Community. Discover new games from the most
             passionate creators, meet new friends, and adventure together. Anyone can play, Everyone is welcome.

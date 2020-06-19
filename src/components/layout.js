@@ -31,6 +31,9 @@ const Layout = ({ children, articleClassNames, isPlainFooter }) => {
           <Link className={styles.navItem} to="/">
             Home
           </Link>
+          <Link className={styles.navItem} to="/wallpapers">
+            Wallpapers
+          </Link>
           <a className="button" href="https://blog.playrole.com">
             Blog
           </a>

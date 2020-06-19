@@ -188,13 +188,37 @@ p:last-child {
   background-image: url('../images/RoleEffortlesslyInterface.png');
 }
 
-.legal-content {
+.legal-content,
+.wallpapers {
   margin-top: 36px;
   text-align: left;
 }
 
 .legal-content p {
   margin-bottom: 18px;
+}
+
+.wallpaper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.wallpaper p {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  font-weight: bold;
+}
+
+.wallpaper ul {
+  line-height: 1.4;
+}
+
+.wallpaper-preview {
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  background: url('../images/Role_Worlds_Wallpaper.jpg') no-repeat center center;
+  background-size: cover;
 }
 
 @media only screen and (max-width: 1230px) {
