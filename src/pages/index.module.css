@@ -129,11 +129,26 @@ p:last-child {
 }
 
 .form {
-  margin-top: 36px;
+  margin: 36px 0 54px;
 }
 
 .form-heading {
   margin-bottom: 9px;
+}
+
+.early-access-heading {
+  color: #c1d94f;
+}
+
+.have-account-heading {
+  margin-bottom: 9px;
+  font-size: 14px;
+}
+
+.login-button {
+  width: 100%;
+  max-width: 433px;
+  margin: 0 auto;
 }
 
 .arrow {

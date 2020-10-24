@@ -14,6 +14,21 @@ export default ({ data }) => {
       <div className={styles.section}>
         <header className={[styles.innerContent, styles.headerContent].join(' ')}>
           <h1 className={styles.logo}>Role</h1>
+
+          <div className="">
+            <h2 className={`heading1 ${styles.earlyAccessHeading}`}>Early Access is here!</h2>
+            <h3 className={`heading1 ${styles.haveAccountHeading}`}>Have an account?</h3>
+            <a className={`button is-pink ${styles.loginButton}`} href="https://app.playrole.com">
+              Login Here
+            </a>
+            <div className={styles.form}>
+              <div className={['heading3', styles.formHeading].join(' ')}>
+                Don’t have an invite? Sign up to be among the first to play:
+              </div>
+              <Mailchimp />
+            </div>
+          </div>
+
           <p className="heading2">
             We’re Creating the world’s premier online Role Playing Community. Discover new games from the most
             passionate creators, meet new friends, and adventure together. Anyone can play, Everyone is welcome.
@@ -24,10 +39,6 @@ export default ({ data }) => {
             This is your Game Table. This is Role.
           </p>
           <h2 className="heading1">Welcome Home</h2>
-          <div className={styles.form}>
-            <div className={['heading3', styles.formHeading].join(' ')}>Join us and learn more</div>
-            <Mailchimp />
-          </div>
         </header>
         <div className={styles.arrow} />
       </div>
@@ -94,12 +105,13 @@ export default ({ data }) => {
       <div className={[styles.slantedSection, styles.slantedSectionFooter].join(' ')}>
         <div className={styles.slant}>
           <div className={[styles.innerContent, styles.pillarsContent].join(' ')}>
-            <h2 className={['heading1', styles.slantedHeading].join(' ')}>Coming in 2020</h2>
+            <h2 className={['heading1', styles.slantedHeading].join(' ')}>Early Access Open Now</h2>
             <h3 className="heading2">Your Next Great Adventure Awaits</h3>
             <p>
-              Role is launching in 2020, with Early Access opening soon.
+              Role is currently in private Early Access, with invites going out in stages. Want to be among the first to
+              play?
               <br />
-              Be among the first to know, and follow along for future updates!
+              Sign up for our mailing list, and follow along for future updates!
             </p>
             <div className={['heading3', styles.formHeading].join(' ')}>Join the Role Community</div>
             <Mailchimp isSlanted />
