@@ -128,12 +128,16 @@ p:last-child {
   display: block;
 }
 
+.now-open {
+  margin-bottom: 54px;
+}
+
 .form {
   margin: 36px 0 54px;
 }
 
 .form-heading {
-  margin-bottom: 9px;
+  margin-bottom: 18px;
 }
 
 .early-access-heading {
@@ -149,6 +153,12 @@ p:last-child {
   width: 100%;
   max-width: 433px;
   margin: 0 auto;
+}
+
+.login-button.is-slanted:hover,
+.login-button.is-slanted:focus {
+  background: #ff006b;
+  color: #fff;
 }
 
 .arrow {

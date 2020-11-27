@@ -15,18 +15,12 @@ export default ({ data }) => {
         <header className={[styles.innerContent, styles.headerContent].join(' ')}>
           <h1 className={styles.logo}>Role</h1>
 
-          <div className="">
+          <div className={styles.nowOpen}>
             <h2 className={`heading1 ${styles.earlyAccessHeading}`}>Early Access is here!</h2>
-            <h3 className={`heading1 ${styles.haveAccountHeading}`}>Have an account?</h3>
-            <a className={`button is-pink ${styles.loginButton}`} href="https://app.playrole.com">
-              Login Here
+            <h3 className={`heading1 ${styles.haveAccountHeading}`}>Now open to everyone</h3>
+            <a className={`button is-pink ${styles.loginButton}`} href="https://app.playrole.com/signup">
+              Play Now
             </a>
-            <div className={styles.form}>
-              <div className={['heading3', styles.formHeading].join(' ')}>
-                Don’t have an invite? Sign up to be among the first to play:
-              </div>
-              <Mailchimp />
-            </div>
           </div>
 
           <p className="heading2">
@@ -108,13 +102,17 @@ export default ({ data }) => {
             <h2 className={['heading1', styles.slantedHeading].join(' ')}>Early Access Open Now</h2>
             <h3 className="heading2">Your Next Great Adventure Awaits</h3>
             <p>
-              Role is currently in private Early Access, with invites going out in stages. Want to be among the first to
-              play?
+              Role is currently in Early Access, now open to everyone! Want to be among the first to play?
               <br />
-              Sign up for our mailing list, and follow along for future updates!
+              Sign up and get started today:
             </p>
             <div className={['heading3', styles.formHeading].join(' ')}>Join the Role Community</div>
-            <Mailchimp isSlanted />
+            <a
+              className={`button is-pink ${styles.loginButton} ${styles.isSlanted}`}
+              href="https://app.playrole.com/signup"
+            >
+              Play Now
+            </a>
           </div>
         </div>
       </div>
