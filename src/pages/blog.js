@@ -10,7 +10,7 @@ export default ({ data }) => {
       <Helmet>
         <meta http-equiv="refresh" content="5;url=https://blog.playrole.com" />
       </Helmet>
-      <Layout articleClassNames={[styles.content]} isPlainFooter>
+      <Layout articleClassName={styles.content} isPlainFooter>
         <h1 className={styles.logo}>Role</h1>
         <h2 className="heading1">Redirecting you to our blog...</h2>
         <p>

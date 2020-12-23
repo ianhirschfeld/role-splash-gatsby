@@ -7,7 +7,7 @@ import SEO from '../components/seo'
 import styles from './404.module.css'
 
 const NotFoundPage = () => (
-  <Layout articleClassNames={[styles.content]} isPlainFooter>
+  <Layout articleClassName={styles.content} isPlainFooter>
     <SEO title="404: Not found" />
     <h1 className={styles.logo}>Role</h1>
     <h2 className="heading1">Whoops!</h2>

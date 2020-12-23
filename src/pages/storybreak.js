@@ -13,7 +13,7 @@ export default ({ data }) => {
           content="0;url=https://www.playrole.com/kickstarter_storybreak?utm_source=maximumfun.org&utm_medium=podcast&utm_campaign=storybreak"
         />
       </Helmet>
-      <Layout articleClassNames={[styles.content]} isPlainFooter>
+      <Layout articleClassName={styles.content} isPlainFooter>
         <h1 className={styles.logo}>Role</h1>
         <h2 className="heading1">Thank you for your support!</h2>
         <p>

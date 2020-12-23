@@ -70,6 +70,12 @@ a:focus {
   letter-spacing: normal;
 }
 
+.heading1.is-centered,
+.heading2.is-centered,
+.heading3.is-centered {
+  text-indent: 5px;
+}
+
 .clearfix:after {
   display: table;
   content: '';

@@ -13,7 +13,7 @@ export default ({ data }) => {
           content="3;url=https://www.kickstarter.com/projects/role/role-a-new-kind-of-platform-for-the-rpg-community?ref=8cfxa3"
         />
       </Helmet>
-      <Layout articleClassNames={[styles.content]} isPlainFooter>
+      <Layout articleClassName={styles.content} isPlainFooter>
         <h1 className={styles.logo}>Role</h1>
         <h2 className="heading1">Thank you for your support!</h2>
         <p>

@@ -11,15 +11,15 @@ export default ({ data }) => {
     <Layout>
       <SEO title="Privacy Policy" />
       <div className={styles.section}>
-        <header className={[styles.innerContent, styles.headerContent].join(' ')}>
+        <header className={`${styles.innerContent} ${styles.headerContent}`}>
           <h1 className={styles.logo}>Role</h1>
         </header>
       </div>
 
-      <div className={[styles.slantedSection, styles.slantedSectionFooter].join(' ')}>
+      <div className={`${styles.slantedSection} ${styles.slantedSectionFooter}`}>
         <div className={styles.slant}>
-          <div className={[styles.innerContent, styles.pillarsContent].join(' ')}>
-            <h2 className={['heading1', styles.slantedHeading].join(' ')}>
+          <div className={`${styles.innerContent} ${styles.pillarsContent}`}>
+            <h2 className={`heading1 ${styles.slantedHeading}`}>
               Role Inc.
               <br />
               Privacy Policy
