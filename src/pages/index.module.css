@@ -19,7 +19,7 @@ p:last-child {
 
 .pillars-content {
   max-width: 1232px;
-  padding: 36px 0;
+  padding: 72px 0;
 }
 
 .creators-content {
@@ -29,7 +29,7 @@ p:last-child {
 .logo {
   width: 214px;
   height: 221px;
-  margin: 0 auto 72px;
+  margin: 0 auto 36px;
   background: url('../images/RoleLogo.png') no-repeat 0 0;
   background-size: contain;
   text-indent: 100%;
@@ -37,13 +37,12 @@ p:last-child {
 }
 
 .section {
-  padding: 108px 0;
+  padding: 72px 0;
   color: #fff;
   text-align: center;
 }
 
 .slanted-section {
-  padding: 110px 0;
   text-align: center;
 }
 
@@ -53,33 +52,8 @@ p:last-child {
   background-color: #fff;
 }
 
-.slant:before,
-.slant:after {
-  width: 0;
-  display: block;
-  position: absolute;
-  left: 0;
-  border-style: solid;
-  border-width: 0 100vw 200px 0;
-  content: '';
-}
-
-.slant:before {
-  top: -200px;
-  border-color: transparent transparent white transparent;
-}
-
-.slant:after {
-  bottom: -200px;
-  border-color: transparent white transparent transparent;
-}
-
 .slanted-section.slanted-section-footer {
   padding-bottom: 0;
-}
-
-.slanted-section-footer .slant {
-  padding-bottom: 108px;
 }
 
 .slanted-section-footer .slant:after {
@@ -88,7 +62,7 @@ p:last-child {
 
 .section-heading,
 .slanted-heading {
-  margin-bottom: 36px;
+  margin-bottom: 72px;
 }
 
 .section-heading {
@@ -97,6 +71,10 @@ p:last-child {
 
 .slanted-heading {
   color: #ff006b;
+}
+
+.slanted-heading.is-teal {
+  color: #46ccb1;
 }
 
 .banner {
@@ -129,7 +107,67 @@ p:last-child {
 }
 
 .now-open {
-  margin-bottom: 54px;
+  margin-bottom: 36px;
+}
+
+.video-wrapper {
+  max-width: 585px;
+  margin: 0 auto 18px;
+}
+
+.video {
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.video iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.panel {
+  max-width: 585px;
+  margin: 0 auto 36px;
+  padding: 18px;
+  position: relative;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.35);
+  color: #111;
+  font-size: 14px;
+}
+
+.panel-gradient {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
+  border-radius: inherit;
+}
+
+.panel-content {
+  position: relative;
+  z-index: 2;
+}
+
+.panel p {
+  max-width: 420px;
+  margin: 0 auto 18px;
+}
+
+.panel-account {
+  margin-top: 18px;
+  font-weight: bold;
+}
+
+.panel-account a {
+  color: #46ccb1;
 }
 
 .form {
@@ -155,18 +193,62 @@ p:last-child {
   margin: 0 auto;
 }
 
-.login-button.is-slanted:hover,
-.login-button.is-slanted:focus {
-  background: #ff006b;
-  color: #fff;
-}
-
 .arrow {
   width: 22px;
   height: 28px;
   margin: 36px auto 0;
   background: url('../images/DoubleArrow.png') no-repeat 0 0;
   background-size: contain;
+}
+
+.interface {
+  max-width: 940px;
+  margin: 0 auto 72px;
+}
+
+.interface-image-wrapper {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.interface-table {
+  padding-top: 62.89%;
+  position: relative;
+}
+
+.interface-template-creator {
+  padding-top: 58.2%;
+  position: relative;
+}
+
+.interface-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.interface-table .interface-image {
+  background-image: url('../images/RoleInterface_Table.jpg');
+}
+
+.interface-template-creator .interface-image {
+  background-image: url('../images/RoleInterface_TemplateCreator.jpg');
+}
+
+.interface h3 {
+  margin-bottom: 14px;
+}
+
+.interface p {
+  margin-bottom: 18px;
 }
 
 .pillars {
@@ -180,6 +262,7 @@ p:last-child {
 }
 
 .pillar-heading {
+  margin-bottom: 14px;
 }
 
 .pillar-body {
@@ -188,7 +271,7 @@ p:last-child {
 .pillar-image-container {
   width: 100%;
   max-width: 346px;
-  margin: 0 auto;
+  margin: 0 auto 36px;
 }
 
 .pillar-image {
@@ -201,6 +284,15 @@ p:last-child {
   overflow: hidden;
 }
 
+.pillar-signup-button {
+  max-width: 549px;
+  margin: 72px auto 0;
+}
+
+.pillar-signup-button > div {
+  margin-bottom: 18px;
+}
+
 .image-play {
   background-image: url('../images/PlaySomethingNewInterface.png');
 }
@@ -211,6 +303,10 @@ p:last-child {
 
 .image-role {
   background-image: url('../images/RoleEffortlesslyInterface.png');
+}
+
+.join-creators-program-heading {
+  margin: -36px 0 36px;
 }
 
 .legal-content,
@@ -272,9 +368,12 @@ p:last-child {
   .pillar:nth-child(2) {
     padding-left: 18px;
   }
+}
 
-  .pillar:last-child {
-    margin-top: 54px;
+@media only screen and (max-width: 940px) {
+  .interface {
+    padding-left: 18px;
+    padding-right: 18px;
   }
 }
 
@@ -295,29 +394,6 @@ p:last-child {
   .inner-content {
     padding-left: 18px;
     padding-right: 18px;
-  }
-
-  .section {
-    padding-top: 72px;
-    padding-bottom: 72px;
-  }
-
-  .slanted-section {
-    padding-top: 90px;
-    padding-bottom: 90px;
-  }
-
-  .slant:before,
-  .slant:after {
-    border-width: 0 100vw 100px 0;
-  }
-
-  .slant:before {
-    top: -100px;
-  }
-
-  .slant:after {
-    bottom: -100px;
   }
 
   .banner-button {

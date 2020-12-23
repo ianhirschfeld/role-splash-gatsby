@@ -5,12 +5,12 @@
 body {
   font-size: 18px;
   background: #000;
-  color: #000;
+  color: #111;
 }
 
 body,
 input {
-  font-family: 'europa', 'sans-serif';
+  font-family: 'europa', 'Helvetica', 'Arial', 'sans-serif';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -33,7 +33,7 @@ h6,
 p {
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 a {
@@ -56,18 +56,18 @@ a:focus {
 
 .heading2 {
   font-family: 'europa', 'sans-serif';
-  font-size: 20px;
-  font-weight: normal;
+  font-size: 18px;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
 
 .heading3 {
   font-family: 'europa', 'sans-serif';
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: none;
-  letter-spacing: normal;
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 
 .heading1.is-centered,
@@ -95,30 +95,27 @@ a:focus {
   border-radius: 36px;
   background: #fff;
   border: none;
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.35);
   color: #ff006b;
   font-size: 18px;
   font-weight: bold;
-  line-height: 36px;
+  line-height: 34px;
   transition: all 0.1s ease-in-out;
   cursor: pointer;
 }
 
+.button.heading2 {
+  font-size: 14px;
+}
+
 .button:hover,
 .button:focus {
-  background: #ff006b;
-  color: #fff;
   text-decoration: none;
 }
 
 .button.is-pink {
   background: #ff006b;
   color: #fff;
-}
-
-.button.is-pink:hover,
-.button.is-pink:focus {
-  background: #fff;
-  color: #ff006b;
 }
 
 @media only screen and (max-width: 667px) {

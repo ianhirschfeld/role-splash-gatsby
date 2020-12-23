@@ -16,11 +16,11 @@
 }
 
 .email::placeholder {
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .slanted-email-form .email::placeholder {
-  color: rgba(0,0,0,0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .submit {
@@ -38,24 +38,10 @@
   letter-spacing: normal !important;
 }
 
-.submit:hover,
-.submit:focus {
-  border-color: #ff006b !important;
-  background: #ff006b !important;
-  color: #fff !important;
-}
-
 .slanted-email-form .submit {
   background: #ff006b !important;
   border-color: #ff006b !important;
   color: #fff !important;
-}
-
-.slanted-email-form .submit:hover,
-.slanted-email-form .submit:focus {
-  border-color: #ff006b !important;
-  background: #fff !important;
-  color: #ff006b !important;
 }
 
 @media only screen and (max-width: 768px) {

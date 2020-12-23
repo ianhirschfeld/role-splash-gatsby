@@ -33,6 +33,7 @@
 }
 
 .social-icon {
+  min-width: 36px;
   width: 36px;
   height: 36px;
   margin-right: 18px;
@@ -86,5 +87,15 @@
   .page-nav {
     padding-left: 18px;
     padding-right: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-spacer {
+    flex-basis: 100%;
+  }
+
+  .social-icon {
+    margin-bottom: 18px;
   }
 }

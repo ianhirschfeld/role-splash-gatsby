@@ -22,30 +22,48 @@ const Layout = ({ children, articleClassName, isPlainFooter }) => {
 
       <div className={styles.pageWrapper}>
         <nav className={styles.pageNav}>
-          <a className={`${styles.socialIcon} ${styles.iconFacebook}`} href="https://www.facebook.com/PlayRoleApp">
+          <a
+            className={`${styles.socialIcon} ${styles.iconFacebook}`}
+            href="https://www.facebook.com/PlayRoleApp"
+            target="_blank"
+          >
             Facebook
           </a>
-          <a className={`${styles.socialIcon} ${styles.iconTwitter}`} href="https://twitter.com/RoleApp">
+          <a
+            className={`${styles.socialIcon} ${styles.iconTwitter}`}
+            href="https://twitter.com/RoleApp"
+            target="_blank"
+          >
             Twitter
           </a>
-          <a className={`${styles.socialIcon} ${styles.iconYoutube}`} href="https://youtube.com/c/RoleApp">
+          <a
+            className={`${styles.socialIcon} ${styles.iconYoutube}`}
+            href="https://youtube.com/c/RoleApp"
+            target="_blank"
+          >
             YouTube
           </a>
-          <a className={`${styles.socialIcon} ${styles.iconTwitch}`} href="https://twitch.tv/PlayRoleApp">
+          <a
+            className={`${styles.socialIcon} ${styles.iconTwitch}`}
+            href="https://twitch.tv/PlayRoleApp"
+            target="_blank"
+          >
             Twitch
           </a>
+
           <div className={styles.navSpacer} />
+
           <Link className={styles.navItem} to="/">
             Home
           </Link>
-          <a className={styles.navItem} href="https://app.playrole.com">
-            Login
+          <a className={styles.navItem} href="https://blog.playrole.com">
+            Blog
           </a>
           <Link className={styles.navItem} to="/wallpapers">
             Wallpapers
           </Link>
-          <a className="button" href="https://blog.playrole.com">
-            Blog
+          <a className="button" href="https://app.playrole.com">
+            Login
           </a>
         </nav>
 
