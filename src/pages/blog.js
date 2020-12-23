@@ -12,7 +12,7 @@ export default ({ data }) => {
       </Helmet>
       <Layout articleClassName={styles.content} isPlainFooter>
         <h1 className={styles.logo}>Role</h1>
-        <h2 className="heading1">Redirecting you to our blog...</h2>
+        <h2 className="heading1 is-centered">Redirecting you to our blog...</h2>
         <p>
           If you aren't automatically redirected in 5 seconds, <a href="https://blog.playrole.com">click here</a>.
         </p>

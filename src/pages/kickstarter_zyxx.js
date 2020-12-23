@@ -15,7 +15,7 @@ export default ({ data }) => {
       </Helmet>
       <Layout articleClassName={styles.content} isPlainFooter>
         <h1 className={styles.logo}>Role</h1>
-        <h2 className="heading1">Thank you for your support!</h2>
+        <h2 className="heading1 is-centered">Thank you for your support!</h2>
         <p>
           You should be redirected to our Kickstarter in 3 seconds. If you aren't,{' '}
           <a href="https://www.kickstarter.com/projects/role/role-a-new-kind-of-platform-for-the-rpg-community?ref=8cfxa3">

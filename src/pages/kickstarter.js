@@ -15,7 +15,7 @@ export default ({ data }) => {
       </Helmet>
       <Layout articleClassName={styles.content} isPlainFooter>
         <h1 className={styles.logo}>Role</h1>
-        <h2 className="heading1">Redirecting you to our Kickstarter page...</h2>
+        <h2 className="heading1 is-centered">Redirecting you to our Kickstarter page...</h2>
         <p>
           If you aren't automatically redirected in 1 second,{' '}
           <a href="https://www.kickstarter.com/projects/role/role-a-new-kind-of-platform-for-the-rpg-community?ref=3pr7wq">

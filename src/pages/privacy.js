@@ -19,12 +19,12 @@ export default ({ data }) => {
       <div className={`${styles.slantedSection} ${styles.slantedSectionFooter}`}>
         <div className={styles.slant}>
           <div className={`${styles.innerContent} ${styles.pillarsContent}`}>
-            <h2 className={`heading1 ${styles.slantedHeading}`}>
+            <h2 className={`heading1 is-centered ${styles.slantedHeading}`}>
               Role Inc.
               <br />
               Privacy Policy
             </h2>
-            <h3 className="heading2">Last Updated March, 2020</h3>
+            <h3 className="heading2 is-centered">Last Updated March, 2020</h3>
             <div className={styles.legalContent}>
               <p>
                 Role, Inc. (“<strong>Role</strong>,” “<strong>we</strong>,” “<strong>us</strong>,” or “
