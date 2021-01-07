@@ -19,7 +19,7 @@ export default ({ data }) => {
       <div className={styles.sections}>
         <section className={styles.section}>
           <div className={styles.sectionContent}>
-            <h2 className={`heading1 is-centered ${styles.sectionHeading}`}>Redirecting you to our blog...</h2>
+            <h2 className={`heading1 is-centered ${styles.sectionHeading1}`}>Redirecting you to our blog...</h2>
             <p>
               If you aren't automatically redirected in 5 seconds, <a href="https://blog.playrole.com">click here</a>.
             </p>

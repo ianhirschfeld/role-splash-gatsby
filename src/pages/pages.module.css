@@ -3,6 +3,17 @@
   text-align: center;
 }
 
+.sections:last-child {
+  margin-bottom: 0;
+}
+
+.sections.is-white {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background: var(--color-white);
+  color: var(--color-dark-grey);
+}
+
 .section {
   max-width: var(--content-width);
   margin: 36px auto;
@@ -15,22 +26,56 @@
   margin-bottom: 36px;
 }
 
-.section-heading {
-  margin-top: 36px;
-  margin-bottom: 36px;
+.section-content {
+  max-width: var(--content-width-narrow);
+  margin: 0 auto;
+}
+
+.section-heading1 {
+  margin-top: 68px;
+  margin-bottom: 68px;
+}
+
+.section-heading1:first-child {
+  margin-top: 0;
+}
+
+.section-heading2 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.section-heading3 {
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
 
 .logo {
-  width: 107px;
-  height: 111px;
-  margin: 0 auto 72px;
+  width: 214px;
+  height: 221px;
+  margin: 0 auto 36px;
   background: url('../images/RoleLogo.png') no-repeat 0 0;
   background-size: contain;
   text-indent: 100%;
   overflow: hidden;
 }
 
+.is-small {
+  width: 107px;
+  height: 111px;
+}
+
+.logo-subheading {
+  font-size: 1.4rem !important;
+}
+
 .button {
   max-width: 420px;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 667px) {
+  .section {
+    font-size: 1.6rem;
+  }
 }

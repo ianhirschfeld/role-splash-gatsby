@@ -1,33 +1,32 @@
 import React from 'react'
 
+import pageStyles from './pages.module.css'
 import styles from './index.module.css'
 
 import DoubleArrowIcon from '../images/icons/DoubleArrowIcon.svg'
 
-import Layout from '../components/layout'
-import SEO from '../components/seo'
-import Panel from '../components/Panel'
-
-import Mailchimp from '../components/mailchimp/mailchimp'
 import GoogleForm from '../components/google-form/google-form'
+import Layout from '../components/layout'
+import Panel from '../components/Panel'
+import SEO from '../components/seo'
 
 export default ({ data }) => {
   return (
     <Layout>
       <SEO title="Role - Every story, every world, every version of you." titleTemplate={`%s`} />
 
-      <header className={styles.sections}>
-        <section className={styles.section}>
-          <h1 className={styles.logo}>Role</h1>
+      <header className={pageStyles.sections}>
+        <section className={pageStyles.section}>
+          <h1 className={pageStyles.logo}>Role</h1>
         </section>
 
-        <section className={styles.section}>
+        <section className={pageStyles.section}>
           <h2 className={`heading1 is-centered green`}>Early Access is here!</h2>
-          <h3 className={`heading1 is-centered ${styles.logoSubheading}`}>Now open to everyone</h3>
+          <h3 className={`heading1 is-centered ${pageStyles.logoSubheading}`}>Now open to everyone</h3>
         </section>
 
-        <section className={styles.section}>
-          <div className={`${styles.sectionContent} ${styles.videoWrapper}`}>
+        <section className={pageStyles.section}>
+          <div className={`${pageStyles.sectionContent} ${styles.videoWrapper}`}>
             <div className={styles.video}>
               <iframe
                 src="https://www.youtube.com/embed/4m__7eYDWlw"
@@ -38,7 +37,7 @@ export default ({ data }) => {
             </div>
           </div>
 
-          <Panel className={`${styles.sectionContent} ${styles.signupPanel}`}>
+          <Panel className={`${pageStyles.sectionContent} ${styles.signupPanel}`}>
             <p>
               Role is currently in Early Access, with new features being added every month. Support Role now, and
               receive a discount on your first year subsciption when Early Access ends.
@@ -58,7 +57,7 @@ export default ({ data }) => {
           </Panel>
         </section>
 
-        <section className={styles.section}>
+        <section className={pageStyles.section}>
           <p className="heading2 is-centered">
             Welcome to a new kind of Role-Playing platform, focused on people-first imaginative group play.
           </p>
@@ -73,7 +72,7 @@ export default ({ data }) => {
           </p>
         </section>
 
-        <section className={styles.section}>
+        <section className={pageStyles.section}>
           <h2 className="heading1 is-centered">Welcome Home</h2>
           <div className={styles.arrow}>
             <DoubleArrowIcon />
@@ -81,15 +80,15 @@ export default ({ data }) => {
         </section>
       </header>
 
-      <div className={`${styles.sections} ${styles.isWhite}`}>
-        <h2 className={`heading1 is-centered red ${styles.sectionHeading}`}>You can play with us</h2>
+      <div className={`${pageStyles.sections} ${pageStyles.isWhite}`}>
+        <h2 className={`heading1 is-centered red ${pageStyles.sectionHeading1}`}>You can play with us</h2>
 
-        <section className={`${styles.section} ${styles.interface}`}>
+        <section className={`${pageStyles.section} ${styles.interface}`}>
           <div className={`${styles.interfaceImageContainer} ${styles.interfaceTable}`}>
             <div className={styles.interfaceImage}>Role Interface: Table</div>
           </div>
-          <h3 className={`heading3 is-centered ${styles.interfaceHeading}`}>Video play for Everyone</h3>
-          <div className={styles.sectionContent}>
+          <h3 className={`heading3 is-centered ${pageStyles.sectionHeading3}`}>Video play for Everyone</h3>
+          <div className={pageStyles.sectionContent}>
             <p>
               Play with your friends using crisp, high-quality, stable video chat! Role puts the best part of the game
               front-and-center: the people. Intuitive tools for managing character sheets, rolling dice, and drawing
@@ -101,12 +100,12 @@ export default ({ data }) => {
           </div>
         </section>
 
-        <section className={`${styles.section} ${styles.interface}`}>
+        <section className={`${pageStyles.section} ${styles.interface}`}>
           <div className={`${styles.interfaceImageContainer} ${styles.interfaceTemplateCreator}`}>
             <div className={styles.interfaceImage}>Role Interface: Template Creator</div>
           </div>
-          <h3 className={`heading3 is-centered ${styles.interfaceHeading}`}>Play Anything You Can Imagine</h3>
-          <div className={styles.sectionContent}>
+          <h3 className={`heading3 is-centered ${pageStyles.sectionHeading3}`}>Play Anything You Can Imagine</h3>
+          <div className={pageStyles.sectionContent}>
             <p>
               With the Role Template Creator, you can quickly and easily craft gameplay templates for any game you want
               to play - even homebrew content! Go as simple or as complex as you want with powerful code-free
@@ -117,14 +116,14 @@ export default ({ data }) => {
           </div>
         </section>
 
-        <h2 className={`heading1 is-centered red ${styles.sectionHeading}`}>Coming Soon...</h2>
+        <h2 className={`heading1 is-centered red ${pageStyles.sectionHeading1}`}>Coming Soon...</h2>
 
-        <section className={styles.section}>
+        <section className={pageStyles.section}>
           <div className={styles.pillar}>
             <div className={styles.pillarImageContainer}>
               <div className={`${styles.pillarImage} ${styles.imagePlay}`} />
             </div>
-            <h3 className={`heading3 is-centered ${styles.interfaceHeading}`}>Play Something New</h3>
+            <h3 className={`heading3 is-centered ${pageStyles.sectionHeading3}`}>Play Something New</h3>
             <p>
               It doesn’t matter if you’re a brand new player or a seasoned veteran. The Role marketplace will help you
               discover, explore, and learn new games that meet your style.
@@ -134,7 +133,7 @@ export default ({ data }) => {
             <div className={styles.pillarImageContainer}>
               <div className={`${styles.pillarImage} ${styles.imageTable}`} />
             </div>
-            <h3 className={`heading3 is-centered ${styles.interfaceHeading}`}>Fill Your Table</h3>
+            <h3 className={`heading3 is-centered ${pageStyles.sectionHeading3}`}>Fill Your Table</h3>
             <p>
               Looking for people to play with? Need a Game Master to help run your game? Our community matching tools
               will help you find people and get playing quickly.
@@ -142,9 +141,9 @@ export default ({ data }) => {
           </div>
         </section>
 
-        <section className={styles.section}>
-          <div className={`${styles.sectionContent} ${styles.interfaceSignup}`}>
-            <h3 className={`heading3 is-centered ${styles.interfaceHeading}`}>Join the Role Community</h3>
+        <section className={pageStyles.section}>
+          <div className={`${pageStyles.sectionContent} ${styles.interfaceSignup}`}>
+            <h3 className={`heading3 is-centered ${pageStyles.sectionHeading3}`}>Join the Role Community</h3>
             <a href="https://app.playrole.com/signup" className={`button ${styles.signupButton}`}>
               Sign Up
             </a>
@@ -152,12 +151,12 @@ export default ({ data }) => {
         </section>
       </div>
 
-      <div className={styles.sections}>
+      <div className={pageStyles.sections}>
         <h2 className="heading1 is-centered">Are You a Game Creator?</h2>
 
-        <section className={styles.section}>
-          <div className={styles.sectionContent}>
-            <h3 className={`heading3 is-centered ${styles.interfaceHeading}`}>Join the Role Creators Program</h3>
+        <section className={pageStyles.section}>
+          <div className={pageStyles.sectionContent}>
+            <h3 className={`heading3 is-centered ${pageStyles.sectionHeading3}`}>Join the Role Creators Program</h3>
             <p>
               Role is looking for the best new game creators who want to share their work with the world. More than just
               a marketplace - we’re invested in helping people discover new content from diverse voices, and giving
@@ -174,10 +173,10 @@ export default ({ data }) => {
         </section>
       </div>
 
-      <div className={`${styles.sections} ${styles.isWhite}`}>
-        <h2 className={`heading1 is-centered teal ${styles.sectionHeading}`}>Early Access Open Now</h2>
-        <section className={styles.section}>
-          <h3 className={`heading3 is-centered ${styles.interfaceHeading}`}>Your Next Great Adventure Awaits</h3>
+      <div className={`${pageStyles.sections} ${pageStyles.isWhite}`}>
+        <h2 className={`heading1 is-centered teal ${pageStyles.sectionHeading1}`}>Early Access Open Now</h2>
+        <section className={pageStyles.section}>
+          <h3 className={`heading3 is-centered ${pageStyles.sectionHeading3}`}>Your Next Great Adventure Awaits</h3>
           <p>Role is currently in Early Access, now open to everyone! Want to be among the first to play?</p>
           <p>
             <strong>Sign up and get started today:</strong>

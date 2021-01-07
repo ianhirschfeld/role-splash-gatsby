@@ -1,5 +1,6 @@
 import React from 'react'
 
+import pageStyles from './pages.module.css'
 import styles from './index.module.css'
 
 import Layout from '../components/layout'
@@ -11,20 +12,20 @@ export default ({ data }) => {
     <Layout>
       <SEO title="Privacy Policy" />
 
-      <div className={styles.sections}>
-        <header className={styles.section}>
-          <h1 className={styles.logo}>Role</h1>
+      <div className={pageStyles.sections}>
+        <header className={pageStyles.section}>
+          <h1 className={`${pageStyles.logo} ${pageStyles.isSmall}`}>Role</h1>
         </header>
       </div>
 
-      <div className={`${styles.sections} ${styles.isWhite}`}>
-        <section className={styles.section}>
-          <h2 className={`heading1 is-centered red ${styles.sectionHeading}`}>
+      <div className={`${pageStyles.sections} ${pageStyles.isWhite}`}>
+        <section className={pageStyles.section}>
+          <h2 className={`heading1 is-centered red ${pageStyles.sectionHeading1}`}>
             Role, Inc.
             <br />
             Privacy Policy
           </h2>
-          <h3 className={`heading2 is-centered ${styles.interfaceHeading}`}>Last Updated March, 2020</h3>
+          <h3 className={`heading2 is-centered ${pageStyles.sectionHeading3}`}>Last Updated March, 2020</h3>
           <div className={styles.legalContent}>
             <p>
               Role, Inc. (“<strong>Role</strong>,” “<strong>we</strong>,” “<strong>us</strong>,” or “
@@ -98,44 +99,39 @@ export default ({ data }) => {
               broad geographical information, and navigation pattern. In particular, the following information is
               created and automatically logged in our systems:
             </p>
-            <p>
-              <ul>
-                <li>
-                  <strong>Log data</strong>: Information that your browser automatically sends whenever you visit the
-                  Site (“<strong>log data</strong>”). Log data includes your Internet Protocol address, browser type and
-                  settings, the date and time of your request, and how you interacted with the Site.
-                </li>
-                <li>
-                  <strong>Cookies</strong>: Please see the “Cookies” section below to learn more about how we use
-                  cookies.
-                </li>
-                <li>
-                  <strong>Device information</strong>: Includes name of the device, operating system, and browser you
-                  are using. Information collected may depend on the type of device you use and its settings.
-                </li>
-                <li>
-                  <strong>Usage Information</strong>: We collect information about how you use our Service, such as the
-                  types of content that you view or engage with, the features you use, the actions you take, and the
-                  time, frequency, and duration of your activities.
-                </li>
-              </ul>
-            </p>
+            <ul>
+              <li>
+                <strong>Log data</strong>: Information that your browser automatically sends whenever you visit the Site
+                (“<strong>log data</strong>”). Log data includes your Internet Protocol address, browser type and
+                settings, the date and time of your request, and how you interacted with the Site.
+              </li>
+              <li>
+                <strong>Cookies</strong>: Please see the “Cookies” section below to learn more about how we use cookies.
+              </li>
+              <li>
+                <strong>Device information</strong>: Includes name of the device, operating system, and browser you are
+                using. Information collected may depend on the type of device you use and its settings.
+              </li>
+              <li>
+                <strong>Usage Information</strong>: We collect information about how you use our Service, such as the
+                types of content that you view or engage with, the features you use, the actions you take, and the time,
+                frequency, and duration of your activities.
+              </li>
+            </ul>
             <p>The following information is automatically logged in our systems when you use the App:</p>
-            <p>
-              <ul>
-                <li>
-                  <strong>Device Information</strong>: We may collect information about your device including the IP
-                  address, the device type, non-permanent identifiers (i.e., advertising ID), the operating system
-                  version, data connection type (WiFi/mobile data), and name of your mobile service provider.
-                  Information collected may depend on the type of device you use and its settings.
-                </li>
-                <li>
-                  <strong>Usage Information</strong>: We collect information related to the actions you take through the
-                  App, including how you navigate the App, the length of time you spend in the App, and diagnostics when
-                  errors are experienced (crash/error reporting).
-                </li>
-              </ul>
-            </p>
+            <ul>
+              <li>
+                <strong>Device Information</strong>: We may collect information about your device including the IP
+                address, the device type, non-permanent identifiers (i.e., advertising ID), the operating system
+                version, data connection type (WiFi/mobile data), and name of your mobile service provider. Information
+                collected may depend on the type of device you use and its settings.
+              </li>
+              <li>
+                <strong>Usage Information</strong>: We collect information related to the actions you take through the
+                App, including how you navigate the App, the length of time you spend in the App, and diagnostics when
+                errors are experienced (crash/error reporting).
+              </li>
+            </ul>
             <p>
               <strong>Cookies</strong>: We use cookies to operate and administer our Site, gather usage data on our
               Site, and improve your experience on it. A “cookie” is a piece of information sent to your browser by a
@@ -177,46 +173,44 @@ export default ({ data }) => {
               and how to turn cookies off. Please see the links below for guidance on how to modify your web browser’s
               settings on the most popular browsers:
             </p>
-            <p>
-              <ul>
-                <li>
-                  <a
-                    href="https://support.microsoft.com/en-us/help/4027776/microsoft-edge-find-settings-tools-internet-options"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Microsoft Edge
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://support.mozilla.org/en-US/kb/firefox-options-preferences-and-settings"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Mozilla Firefox
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://support.google.com/chrome/answer/114836?hl=en&co=GENIE.Platform=Desktop"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Google Chrome
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://support.apple.com/guide/safari/customize-settings-per-website-ibrw7f78f7fe/mac"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Apple Safari
-                  </a>
-                </li>
-              </ul>
-            </p>
+            <ul>
+              <li>
+                <a
+                  href="https://support.microsoft.com/en-us/help/4027776/microsoft-edge-find-settings-tools-internet-options"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Microsoft Edge
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://support.mozilla.org/en-US/kb/firefox-options-preferences-and-settings"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Mozilla Firefox
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://support.google.com/chrome/answer/114836?hl=en&co=GENIE.Platform=Desktop"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Google Chrome
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://support.apple.com/guide/safari/customize-settings-per-website-ibrw7f78f7fe/mac"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Apple Safari
+                </a>
+              </li>
+            </ul>
             <p>
               Please note that if you limit the ability of websites to set cookies, you may be unable to access certain
               parts of the Site and you may not be able to benefit from the full functionality of the Site.
@@ -241,26 +235,24 @@ export default ({ data }) => {
               necessary to perform our contract with you.
             </p>
             <p>We also use Personal Data for the following purposes:</p>
-            <p>
-              <ul>
-                <li>To respond to your inquiries, comments, feedback, or questions;</li>
-                <li>
-                  To send administrative information to you, for example, information regarding the Service and changes
-                  to our terms, conditions, and policies;
-                </li>
-                <li>To analyze how you interact with our Service;</li>
-                <li>To maintain and improve the content and functionality of the Service;</li>
-                <li>To develop new products and services;</li>
-                <li>
-                  To prevent fraud, criminal activity, or misuses of our Service, and to ensure the security of our IT
-                  systems, architecture, and networks; and
-                </li>
-                <li>
-                  To comply with legal obligations and legal process and to protect our rights, privacy, safety, or
-                  property, and/or that of our affiliates, you, or other third parties.
-                </li>
-              </ul>
-            </p>
+            <ul>
+              <li>To respond to your inquiries, comments, feedback, or questions;</li>
+              <li>
+                To send administrative information to you, for example, information regarding the Service and changes to
+                our terms, conditions, and policies;
+              </li>
+              <li>To analyze how you interact with our Service;</li>
+              <li>To maintain and improve the content and functionality of the Service;</li>
+              <li>To develop new products and services;</li>
+              <li>
+                To prevent fraud, criminal activity, or misuses of our Service, and to ensure the security of our IT
+                systems, architecture, and networks; and
+              </li>
+              <li>
+                To comply with legal obligations and legal process and to protect our rights, privacy, safety, or
+                property, and/or that of our affiliates, you, or other third parties.
+              </li>
+            </ul>
             <p>
               <strong>Aggregated Information</strong>. We may aggregate Personal Data and use the aggregated information
               to analyze the effectiveness of our Service, to improve and add features to our Service, and for other
@@ -287,41 +279,39 @@ export default ({ data }) => {
               In certain circumstances we may share your Personal Data with third parties without further notice to you,
               unless required by the law, as set forth below:
             </p>
-            <p>
-              <ul>
-                <li>
-                  <strong>Vendors and Service Providers</strong>: To assist us in meeting business operations needs and
-                  to perform certain services and functions, we may share Personal Data with vendors and service
-                  providers, including providers of hosting services, cloud services, and other information technology
-                  services providers, event management services, email communication software and email newsletter
-                  services, advertising and marketing services, payment processors, customer relationship management and
-                  customer support services, and web analytics services. Pursuant to our instructions, these parties
-                  will access, process, or store Personal Data in the course of performing their duties to us. We take
-                  commercially reasonable steps to ensure our service providers adhere to the security standards we
-                  apply to your Personal Data.
-                </li>
-                <li>
-                  <strong>Business Transfers</strong>: If we are involved in a merger, acquisition, financing due
-                  diligence, reorganization, bankruptcy, receivership, sale of all or a portion of our assets, or
-                  transition of service to another provider (collectively a “Transaction”), your Personal Data and other
-                  information may be shared in the diligence process with counterparties and others assisting with the
-                  Transaction and transferred to a successor or affiliate as part of that Transaction along with other
-                  assets.
-                </li>
-                <li>
-                  <strong>Legal Requirements</strong>: If required to do so by law or in the good faith belief that such
-                  action is necessary to (i) comply with a legal obligation, including to meet national security or law
-                  enforcement requirements, (ii) protect and defend our rights or property, (iii) prevent fraud, (iv)
-                  act in urgent circumstances to protect the personal safety of users of the Services, or the public, or
-                  (v) protect against legal liability.
-                </li>
-                <li>
-                  <strong>Other Users</strong>: Certain actions you take may be visible to other users of the Service.
-                  For example, Player’s locations can be made available to Players if they choose to enable certain
-                  sharing features.
-                </li>
-              </ul>
-            </p>
+            <ul>
+              <li>
+                <strong>Vendors and Service Providers</strong>: To assist us in meeting business operations needs and to
+                perform certain services and functions, we may share Personal Data with vendors and service providers,
+                including providers of hosting services, cloud services, and other information technology services
+                providers, event management services, email communication software and email newsletter services,
+                advertising and marketing services, payment processors, customer relationship management and customer
+                support services, and web analytics services. Pursuant to our instructions, these parties will access,
+                process, or store Personal Data in the course of performing their duties to us. We take commercially
+                reasonable steps to ensure our service providers adhere to the security standards we apply to your
+                Personal Data.
+              </li>
+              <li>
+                <strong>Business Transfers</strong>: If we are involved in a merger, acquisition, financing due
+                diligence, reorganization, bankruptcy, receivership, sale of all or a portion of our assets, or
+                transition of service to another provider (collectively a “Transaction”), your Personal Data and other
+                information may be shared in the diligence process with counterparties and others assisting with the
+                Transaction and transferred to a successor or affiliate as part of that Transaction along with other
+                assets.
+              </li>
+              <li>
+                <strong>Legal Requirements</strong>: If required to do so by law or in the good faith belief that such
+                action is necessary to (i) comply with a legal obligation, including to meet national security or law
+                enforcement requirements, (ii) protect and defend our rights or property, (iii) prevent fraud, (iv) act
+                in urgent circumstances to protect the personal safety of users of the Services, or the public, or (v)
+                protect against legal liability.
+              </li>
+              <li>
+                <strong>Other Users</strong>: Certain actions you take may be visible to other users of the Service. For
+                example, Player’s locations can be made available to Players if they choose to enable certain sharing
+                features.
+              </li>
+            </ul>
             <p>
               <strong>4. DATA RETENTION</strong>
             </p>
@@ -356,18 +346,14 @@ export default ({ data }) => {
               <strong>Privacy Rights</strong>: To the extent provided for by law and subject to applicable exceptions,
               California residents have the following privacy rights in relation to the Personal Data we collect:
             </p>
-            <p>
-              <ul>
-                <li>
-                  The right to know what Personal Data we have collected and how we have used and disclosed that
-                  Personal Information;
-                </li>
-                <li>The right to request deletion of your Personal Data;</li>
-                <li>
-                  The right to be free from discrimination relating to the exercise of any of your privacy rights.
-                </li>
-              </ul>
-            </p>
+            <ul>
+              <li>
+                The right to know what Personal Data we have collected and how we have used and disclosed that Personal
+                Information;
+              </li>
+              <li>The right to request deletion of your Personal Data;</li>
+              <li>The right to be free from discrimination relating to the exercise of any of your privacy rights.</li>
+            </ul>
             <p>
               <strong>Exercising Your Rights</strong>: California residents or their authorized agents can exercise the
               above privacy rights and request alternative forms of this Privacy Policy by{' '}

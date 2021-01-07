@@ -22,7 +22,7 @@ export default ({ data }) => {
       <div className={styles.sections}>
         <section className={styles.section}>
           <div className={styles.sectionContent}>
-            <h2 className={`heading1 is-centered ${styles.sectionHeading}`}>Thank you for your support!</h2>
+            <h2 className={`heading1 is-centered ${styles.sectionHeading1}`}>Thank you for your support!</h2>
             <p>
               You should be redirected to our Kickstarter in 1 second. If you aren't,{' '}
               <a href="https://www.playrole.com/kickstarter_storybreak?utm_source=maximumfun.org&utm_medium=podcast&utm_campaign=storybreak">

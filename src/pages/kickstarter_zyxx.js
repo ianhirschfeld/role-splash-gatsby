@@ -22,7 +22,7 @@ export default ({ data }) => {
       <div className={styles.sections}>
         <section className={styles.section}>
           <div className={styles.sectionContent}>
-            <h2 className={`heading1 is-centered ${styles.sectionHeading}`}>Thank you for your support!</h2>
+            <h2 className={`heading1 is-centered ${styles.sectionHeading1}`}>Thank you for your support!</h2>
             <p>
               You should be redirected to our Kickstarter in 3 seconds. If you aren't,{' '}
               <a href="https://www.kickstarter.com/projects/role/role-a-new-kind-of-platform-for-the-rpg-community?ref=8cfxa3">

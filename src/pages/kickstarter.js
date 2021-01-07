@@ -22,7 +22,7 @@ export default ({ data }) => {
       <div className={styles.sections}>
         <section className={styles.section}>
           <div className={styles.sectionContent}>
-            <h2 className={`heading1 is-centered ${styles.sectionHeading}`}>
+            <h2 className={`heading1 is-centered ${styles.sectionHeading1}`}>
               Redirecting you to our Kickstarter page...
             </h2>
             <p>
