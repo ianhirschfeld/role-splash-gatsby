@@ -50,7 +50,10 @@ export default ({ data }) => {
               Sign Up
             </a>
             <div className={styles.panelAccount}>
-              Already have an account? <a href="https://app.playrole.com/login">Log In Here!</a>
+              Already have an account?{' '}
+              <a href="https://app.playrole.com/login" className="teal">
+                Log In Here!
+              </a>
             </div>
           </Panel>
         </section>

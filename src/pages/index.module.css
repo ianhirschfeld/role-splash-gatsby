@@ -87,10 +87,6 @@
   font-weight: bold;
 }
 
-.panel-account a {
-  color: #46ccb1;
-}
-
 .arrow {
   width: 28px;
   height: 28px;
@@ -198,30 +194,18 @@
   margin: 0 auto;
 }
 
-/* TODO: ================ */
-
 .legal-content,
 .wallpapers {
-  margin-top: 36px;
   text-align: left;
 }
 
-.legal-content p {
-  margin-bottom: 18px;
-}
-
-.wallpaper {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.wallpaper p {
+.wallpapers p {
   margin-top: 18px;
   margin-bottom: 18px;
   font-weight: bold;
 }
 
-.wallpaper ul {
+.wallpapers ul {
   line-height: 1.4;
 }
 
@@ -278,16 +262,5 @@
 
   .pillar:first-child {
     margin-top: 0;
-  }
-}
-
-@media only screen and (max-width: 667px) {
-  .inner-content {
-    padding-left: 18px;
-    padding-right: 18px;
-  }
-
-  .banner-button {
-    width: auto;
   }
 }

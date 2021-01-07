@@ -1,29 +1,40 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import Layout from '../components/layout'
 
-import styles from './404.module.css'
+import styles from './pages.module.css'
+
+import Layout from '../components/layout'
 
 export default ({ data }) => {
   return (
-    <>
+    <Layout isPlainFooter>
       <Helmet>
         <meta
           http-equiv="refresh"
           content="0;url=https://www.kickstarter.com/projects/role/role-a-new-kind-of-platform-for-the-rpg-community?ref=3pr7wq"
         />
       </Helmet>
-      <Layout articleClassName={styles.content} isPlainFooter>
+
+      <header className={styles.sections}>
         <h1 className={styles.logo}>Role</h1>
-        <h2 className="heading1 is-centered">Redirecting you to our Kickstarter page...</h2>
-        <p>
-          If you aren't automatically redirected in 1 second,{' '}
-          <a href="https://www.kickstarter.com/projects/role/role-a-new-kind-of-platform-for-the-rpg-community?ref=3pr7wq">
-            click here
-          </a>
-          .
-        </p>
-      </Layout>
-    </>
+      </header>
+
+      <div className={styles.sections}>
+        <section className={styles.section}>
+          <div className={styles.sectionContent}>
+            <h2 className={`heading1 is-centered ${styles.sectionHeading}`}>
+              Redirecting you to our Kickstarter page...
+            </h2>
+            <p>
+              You should be redirected to our Kickstarter in 3 seconds. If you aren't,{' '}
+              <a href="https://www.kickstarter.com/projects/role/role-a-new-kind-of-platform-for-the-rpg-community?ref=3pr7wq">
+                click here
+              </a>
+              .
+            </p>
+          </div>
+        </section>
+      </div>
+    </Layout>
   )
 }

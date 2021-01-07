@@ -59,7 +59,7 @@ class Layout extends Component {
   }
 
   render() {
-    const { children, articleClassName, isPlainFooter } = this.props
+    const { children, isPlainFooter } = this.props
     const year = new Date().getFullYear()
     const footerClassNames = [styles.footer]
     if (isPlainFooter) footerClassNames.push(styles.plainFooter)
@@ -81,7 +81,7 @@ class Layout extends Component {
             {this.renderLinks()}
           </nav>
 
-          <article className={articleClassName}>{children}</article>
+          <article>{children}</article>
 
           <footer className={footerClassNames.join(' ')}>
             <div className={styles.footerContent}>
