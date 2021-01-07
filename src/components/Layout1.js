@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'
 import { Link } from 'gatsby'
 
 import '../styles/global.css'
-import styles from './layout.module.css'
+import styles from './Layout.module.css'
 
 import FacebookIcon from '../images/icons/FacebookIcon.svg'
 import InstagramIcon from '../images/icons/InstagramIcon.svg'
