@@ -1,0 +1,162 @@
+:root {
+  --color-black: #000;
+  --color-dark-grey: #111;
+  --color-light-grey: #e6e6e6;
+  --color-white: #fff;
+
+  --color-red: #ff006b;
+  --color-teal: #46ccb1;
+  --color-green: #abe14d;
+
+  --font-alphapipe: 'bc-alphapipe', 'Helvetica', 'Arial', 'sans-serif';
+  --font-europa: 'europa', 'Helvetica', 'Arial', 'sans-serif';
+  --heading-letter-spacing: 5px;
+
+  --box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.35);
+
+  --page-width: 1200px;
+  --content-width: 940px;
+  --content-width-narrow: 600px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-europa);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 10px;
+}
+
+body {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+a {
+  color: var(--color-red);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+.heading1,
+.heading2,
+.heading3 {
+  text-transform: uppercase;
+  letter-spacing: var(--heading-letter-spacing);
+}
+
+.heading1.is-centered,
+.heading2.is-centered,
+.heading3.is-centered {
+  text-indent: var(--heading-letter-spacing);
+}
+
+.heading1 {
+  font-family: var(--font-alphapipe);
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+.heading2 {
+  font-family: var(--font-europa);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.heading3 {
+  font-family: var(--font-europa);
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.red {
+  color: var(--color-red);
+}
+
+.teal {
+  color: var(--color-teal);
+}
+
+.green {
+  color: var(--color-green);
+}
+
+.box-shadow {
+  box-shadow: var(--box-shadow);
+}
+
+.button {
+  height: 36px;
+  padding: 0 18px;
+  display: block;
+  border-radius: 18px;
+  background: var(--color-red);
+  border: none;
+  box-shadow: var(--box-shadow);
+  color: var(--color-white);
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: var(--heading-letter-spacing);
+  text-indent: var(--heading-letter-spacing);
+  line-height: 36px;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  text-decoration: none;
+}
+
+.button.is-inline {
+  display: inline-block;
+}
+
+.button.is-white {
+  background: var(--color-white);
+  color: var(--color-red);
+}
+
+/* TODO: ================ */
+
+@media only screen and (max-width: 667px) {
+  .heading1 {
+    font-size: 17px;
+  }
+
+  .heading2 {
+    font-size: 15px;
+  }
+
+  .heading3 {
+    font-size: 15px;
+  }
+}

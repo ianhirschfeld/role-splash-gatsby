@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: 'Role',
     description:
-      'We’re creating the world’s premier online Role Playing Community. Discover new games from the most passionate creators, meet new friends and adventure together. Anyone can play, Everyone is welcome.',
-    author: '@roleapp',
+      'We’re creating the world’s premier online Role Playing Community. Discover new games from the most passionate creators, meet new friends and adventure together. Anyone can play, everyone is welcome.',
+    author: '@RoleApp',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -16,6 +16,7 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    `gatsby-plugin-react-svg`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -48,8 +49,5 @@ module.exports = {
         pixelId: '207055927191088',
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

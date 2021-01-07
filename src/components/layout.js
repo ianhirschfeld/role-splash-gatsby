@@ -1,96 +1,110 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 import { Link } from 'gatsby'
 
-import './styles/normalize.css'
-import './styles/global.css'
+import '../styles/global.css'
 import styles from './layout.module.css'
 
-const Layout = ({ children, articleClassName, isPlainFooter }) => {
-  const year = new Date().getFullYear()
-  const footerClassNames = [styles.footer]
-  if (isPlainFooter) footerClassNames.push(styles.plainFooter)
+import FacebookIcon from '../images/icons/FacebookIcon.svg'
+import InstagramIcon from '../images/icons/InstagramIcon.svg'
+import TwitchIcon from '../images/icons/TwitchIcon.svg'
+import TwitterIcon from '../images/icons/TwitterIcon.svg'
+import YoutubeIcon from '../images/icons/YoutubeIcon.svg'
 
-  return (
-    <>
-      <Helmet>
-        <link href="https://use.typekit.net/ynz5mmn.css" rel="stylesheet" />
-        <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css" />
-      </Helmet>
+class Layout extends Component {
+  renderSocialLinks = () => {
+    return (
+      <>
+        <a className={`box-shadow ${styles.socialIcon}`} href="https://twitter.com/RoleApp">
+          <TwitterIcon />
+          <span>Twitter</span>
+        </a>
+        <a className={`box-shadow ${styles.socialIcon}`} href="https://youtube.com/c/RoleApp">
+          <YoutubeIcon />
+          <span>YouTube</span>
+        </a>
+        <a className={`box-shadow ${styles.socialIcon}`} href="https://www.facebook.com/PlayRoleApp">
+          <FacebookIcon />
+          <span>Facebook</span>
+        </a>
+        <a className={`box-shadow ${styles.socialIcon}`} href="https://www.instagram.com/PlayRoleApp">
+          <InstagramIcon />
+          <span>Instagram</span>
+        </a>
+        <a className={`box-shadow ${styles.socialIcon}`} href="https://twitch.tv/PlayRoleApp">
+          <TwitchIcon />
+          <span>Twitch</span>
+        </a>
+      </>
+    )
+  }
 
-      <div className={styles.pageBackground} />
+  renderLinks = () => {
+    return (
+      <>
+        <Link className={styles.navItem} to="/">
+          Home
+        </Link>
+        <a className={styles.navItem} href="https://blog.playrole.com">
+          Blog
+        </a>
+        <Link className={styles.navItem} to="/wallpapers">
+          Wallpapers
+        </Link>
+        <a className={`button is-white ${styles.loginButton}`} href="https://app.playrole.com">
+          Login
+        </a>
+      </>
+    )
+  }
 
-      <div className={styles.pageWrapper}>
-        <nav className={styles.pageNav}>
-          <a
-            className={`${styles.socialIcon} ${styles.iconFacebook}`}
-            href="https://www.facebook.com/PlayRoleApp"
-            target="_blank"
-          >
-            Facebook
-          </a>
-          <a
-            className={`${styles.socialIcon} ${styles.iconTwitter}`}
-            href="https://twitter.com/RoleApp"
-            target="_blank"
-          >
-            Twitter
-          </a>
-          <a
-            className={`${styles.socialIcon} ${styles.iconYoutube}`}
-            href="https://youtube.com/c/RoleApp"
-            target="_blank"
-          >
-            YouTube
-          </a>
-          <a
-            className={`${styles.socialIcon} ${styles.iconTwitch}`}
-            href="https://twitch.tv/PlayRoleApp"
-            target="_blank"
-          >
-            Twitch
-          </a>
+  render() {
+    const { children, articleClassName, isPlainFooter } = this.props
+    const year = new Date().getFullYear()
+    const footerClassNames = [styles.footer]
+    if (isPlainFooter) footerClassNames.push(styles.plainFooter)
 
-          <div className={styles.navSpacer} />
+    return (
+      <>
+        <Helmet>
+          <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+          <link href="//use.typekit.net/ynz5mmn.css" rel="stylesheet" />
+          <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css" />
+        </Helmet>
 
-          <Link className={styles.navItem} to="/">
-            Home
-          </Link>
-          <a className={styles.navItem} href="https://blog.playrole.com">
-            Blog
-          </a>
-          <Link className={styles.navItem} to="/wallpapers">
-            Wallpapers
-          </Link>
-          <a className="button" href="https://app.playrole.com">
-            Login
-          </a>
-        </nav>
+        <div className={styles.background} />
 
-        <article className={articleClassName}>
-          {children}
+        <div className={styles.container}>
+          <nav className={styles.nav}>
+            {this.renderSocialLinks()}
+            <div className={styles.navSpacer} />
+            {this.renderLinks()}
+          </nav>
+
+          <article className={articleClassName}>{children}</article>
+
           <footer className={footerClassNames.join(' ')}>
             <div className={styles.footerContent}>
               &copy; {year} Role, Inc. All rights reserved. <Link to="/privacy">Privacy Policy</Link>.
             </div>
           </footer>
-        </article>
-      </div>
+        </div>
 
-      <script
-        type="text/javascript"
-        dangerouslySetInnerHTML={{
-          __html: `
-          !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
-          },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
-          a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
-          twq('init','o3jss');
-          twq('track','PageView');
-        `,
-        }}
-      />
-    </>
-  )
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+            !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+            },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+            a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+            twq('init','o3jss');
+            twq('track','PageView');
+          `,
+          }}
+        />
+      </>
+    )
+  }
 }
 
 Layout.defaultProps = {

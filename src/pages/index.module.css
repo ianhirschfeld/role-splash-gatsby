@@ -1,29 +1,45 @@
-p {
-  margin-bottom: 36px;
+.sections {
+  margin: 72px 0;
+  text-align: center;
 }
 
-p:last-child {
+.sections:last-child {
   margin-bottom: 0;
 }
 
-.inner-content {
-  width: 100%;
+.sections.is-white {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  background: var(--color-white);
+  color: var(--color-dark-grey);
+}
+
+.section {
+  max-width: var(--content-width);
+  margin: 36px auto;
+  font-size: 1.8rem;
+}
+
+.sections.is-white .section:last-child {
+  margin-bottom: 0;
+}
+
+.section p {
+  margin-bottom: 36px;
+}
+
+.section-content {
+  max-width: var(--content-width-narrow);
   margin: 0 auto;
-  padding-left: 36px;
-  padding-right: 36px;
 }
 
-.header-content {
-  max-width: 1026px;
+.section-heading {
+  margin-top: 72px;
+  margin-bottom: 72px;
 }
 
-.pillars-content {
-  max-width: 1232px;
-  padding: 72px 0;
-}
-
-.creators-content {
-  max-width: 680px;
+.section-heading:first-child {
+  margin-top: 0;
 }
 
 .logo {
@@ -36,83 +52,12 @@ p:last-child {
   overflow: hidden;
 }
 
-.section {
-  padding: 72px 0;
-  color: #fff;
-  text-align: center;
-}
-
-.slanted-section {
-  text-align: center;
-}
-
-.slant {
-  position: relative;
-  z-index: 1;
-  background-color: #fff;
-}
-
-.slanted-section.slanted-section-footer {
-  padding-bottom: 0;
-}
-
-.slanted-section-footer .slant:after {
-  border-width: 0;
-}
-
-.section-heading,
-.slanted-heading {
-  margin-bottom: 72px;
-}
-
-.section-heading {
-  color: #fff;
-}
-
-.slanted-heading {
-  color: #ff006b;
-}
-
-.slanted-heading.is-teal {
-  color: #46ccb1;
-}
-
-.banner {
-  max-width: 1000px;
-  height: 562px;
-  margin-bottom: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: url('../images/InterfaceBanner.jpg') no-repeat center center;
-  background-size: cover;
-  border-radius: 18px;
-}
-
-.banner-content {
-}
-
-.banner-pretitle {
-  font-size: 14px;
-}
-
-.banner-title {
-  margin-bottom: 16px;
-  color: #c1d94f;
-}
-
-.banner-button {
-  width: 484px;
-  display: block;
-}
-
-.now-open {
-  margin-bottom: 36px;
+.logo-subheading {
+  font-size: 1.4rem;
 }
 
 .video-wrapper {
-  max-width: 585px;
-  margin: 0 auto 18px;
+  margin-bottom: 18px;
 }
 
 .video {
@@ -128,35 +73,11 @@ p:last-child {
   left: 0;
 }
 
-.panel {
-  max-width: 585px;
-  margin: 0 auto 36px;
-  padding: 18px;
-  position: relative;
-  background: #fff;
-  border-radius: 18px;
-  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.35);
-  color: #111;
-  font-size: 14px;
+.signup-panel {
+  font-size: 1.4rem;
 }
 
-.panel-gradient {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 100%);
-  border-radius: inherit;
-}
-
-.panel-content {
-  position: relative;
-  z-index: 2;
-}
-
-.panel p {
+.signup-panel p {
   max-width: 420px;
   margin: 0 auto 18px;
 }
@@ -170,55 +91,38 @@ p:last-child {
   color: #46ccb1;
 }
 
-.form {
-  margin: 36px 0 54px;
-}
-
-.form-heading {
-  margin-bottom: 18px;
-}
-
-.early-access-heading {
-  color: #c1d94f;
-}
-
-.have-account-heading {
-  margin-bottom: 9px;
-  font-size: 14px;
-}
-
-.login-button {
-  width: 100%;
-  max-width: 433px;
-  margin: 0 auto;
-}
-
 .arrow {
-  width: 22px;
+  width: 28px;
   height: 28px;
-  margin: 36px auto 0;
-  background: url('../images/DoubleArrow.png') no-repeat 0 0;
-  background-size: contain;
+  margin: 36px auto;
 }
 
-.interface {
-  max-width: 940px;
-  margin: 0 auto 72px;
-}
-
-.interface-image-wrapper {
+.arrow svg {
   width: 100%;
-  margin-bottom: 18px;
+  height: 100%;
+}
+
+.arrow path {
+  fill: var(--color-white);
+}
+
+.interface p {
+  margin-bottom: 0;
+}
+
+.interface-image-container {
+  width: 100%;
+  margin-top: 36px;
+  margin-bottom: 36px;
+  position: relative;
 }
 
 .interface-table {
   padding-top: 62.89%;
-  position: relative;
 }
 
 .interface-template-creator {
   padding-top: 58.2%;
-  position: relative;
 }
 
 .interface-image {
@@ -243,54 +147,37 @@ p:last-child {
   background-image: url('../images/RoleInterface_TemplateCreator.jpg');
 }
 
-.interface h3 {
+.interface-heading {
+  margin-top: 14px;
   margin-bottom: 14px;
 }
 
-.interface p {
-  margin-bottom: 18px;
-}
-
-.pillars {
-}
-
 .pillar {
-  width: 33.33%;
-  padding: 0 36px;
+  width: 50%;
+  max-width: 384px;
   display: inline-block;
   vertical-align: top;
 }
 
-.pillar-heading {
-  margin-bottom: 14px;
+.pillar:first-child {
+  padding-right: 36px;
 }
 
-.pillar-body {
+.pillar:last-child {
+  padding-left: 36px;
 }
 
 .pillar-image-container {
   width: 100%;
-  max-width: 346px;
   margin: 0 auto 36px;
 }
 
 .pillar-image {
   height: 0;
   padding-top: 100%;
-  margin: 0 auto;
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: contain;
-  overflow: hidden;
-}
-
-.pillar-signup-button {
-  max-width: 549px;
-  margin: 72px auto 0;
-}
-
-.pillar-signup-button > div {
-  margin-bottom: 18px;
 }
 
 .image-play {
@@ -301,13 +188,17 @@ p:last-child {
   background-image: url('../images/FillYourTableInterface.png');
 }
 
-.image-role {
-  background-image: url('../images/RoleEffortlesslyInterface.png');
+.interface-signup {
+  padding-top: 36px;
+  border-top: 1px solid var(--color-light-grey);
 }
 
-.join-creators-program-heading {
-  margin: -36px 0 36px;
+.signup-button {
+  max-width: 420px;
+  margin: 0 auto;
 }
+
+/* TODO: ================ */
 
 .legal-content,
 .wallpapers {
