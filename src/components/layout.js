@@ -51,6 +51,7 @@ class Layout extends Component {
         <Link className={styles.navItem} to="/wallpapers">
           Wallpapers
         </Link>
+        <div className={`${styles.navSpacer} ${styles.whenSmall}`} />
         <a className={`button is-white ${styles.loginButton}`} href="https://app.playrole.com">
           Login
         </a>

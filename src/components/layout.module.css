@@ -27,6 +27,11 @@
   flex: 1 1 auto;
 }
 
+.nav-spacer.when-small {
+  flex-basis: 100%;
+  display: none;
+}
+
 .nav-item {
   margin-right: 18px;
   padding: 6px 0 0;
@@ -83,18 +88,25 @@
   color: var(--color-white);
 }
 
-/* TODO: ================ */
-
 @media only screen and (max-width: 667px) {
-  .page-nav {
-    padding-left: 18px;
-    padding-right: 18px;
+  .nav {
+    padding-left: 9px;
+    padding-right: 9px;
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .nav-spacer {
     flex-basis: 100%;
+  }
+
+  .nav-spacer.when-small {
+    flex-basis: 100%;
+    display: block;
+  }
+
+  .login-button {
+    margin-top: 36px;
   }
 
   .social-icon {

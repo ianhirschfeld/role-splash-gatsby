@@ -6,6 +6,8 @@
 .section {
   max-width: var(--content-width);
   margin: 36px auto;
+  padding-left: 18px;
+  padding-right: 18px;
   font-size: 1.8rem;
 }
 
