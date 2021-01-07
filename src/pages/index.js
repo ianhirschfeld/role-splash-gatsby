@@ -6,7 +6,7 @@ import styles from './index.module.css'
 import DoubleArrowIcon from '../images/icons/DoubleArrowIcon.svg'
 
 import GoogleForm from '../components/google-form/google-form'
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import Panel from '../components/Panel'
 import SEO from '../components/seo'
 

@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'
 
 import styles from './pages.module.css'
 
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 
 export default ({ data }) => {
   return (

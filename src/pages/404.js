@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 import styles from './pages.module.css'
 
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import SEO from '../components/seo'
 
 export default () => (
