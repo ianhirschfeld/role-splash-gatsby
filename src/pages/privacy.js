@@ -1,7 +1,6 @@
 import React from 'react'
 
 import pageStyles from './pages.module.css'
-import styles from './index.module.css'
 
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
@@ -14,17 +13,17 @@ export default ({ data }) => {
 
       <div className={pageStyles.sections}>
         <header className={pageStyles.section}>
-          <h1 className={`${pageStyles.logo} ${pageStyles.isSmall}`}>Role</h1>
+          <div className={`${pageStyles.logo} ${pageStyles.isSmall}`}>Role</div>
         </header>
       </div>
 
       <div className={`${pageStyles.sections} ${pageStyles.isWhite}`}>
         <section className={pageStyles.section}>
-          <h2 className={`heading1 is-centered red ${pageStyles.sectionHeading1}`}>
+          <h1 className={`heading1 is-centered red ${pageStyles.sectionHeading1}`}>
             Role, Inc.
             <br />
             Privacy Policy
-          </h2>
+          </h1>
           <h3 className={`heading2 is-centered ${pageStyles.sectionHeading2}`}>Last Updated March, 2020</h3>
           <div className={pageStyles.leftContent}>
             <p>

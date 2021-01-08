@@ -13,14 +13,14 @@ export default ({ data }) => {
 
       <div className={pageStyles.sections}>
         <header className={pageStyles.section}>
-          <h1 className={`${pageStyles.logo} ${pageStyles.isSmall}`}>Role</h1>
+          <div className={`${pageStyles.logo} ${pageStyles.isSmall}`}>Role</div>
         </header>
       </div>
 
       <div className={`${pageStyles.sections} ${pageStyles.isWhite}`}>
         <section className={pageStyles.section}>
           <div className={pageStyles.sectionContent}>
-            <h2 className={`heading1 is-centered red ${pageStyles.sectionHeading1}`}>Wallpapers</h2>
+            <h1 className={`heading1 is-centered red ${pageStyles.sectionHeading1}`}>Wallpapers</h1>
             <div className={`${pageStyles.leftContent} ${styles.wallpapers}`}>
               <div className={styles.wallpaperPreview} />
               <p>Every World Wallpaper</p>

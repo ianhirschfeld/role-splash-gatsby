@@ -16,6 +16,7 @@
 
 .image {
   margin-bottom: 36px;
+  border-radius: 18px;
   text-indent: 100%;
   word-wrap: nowrap;
   overflow: hidden;

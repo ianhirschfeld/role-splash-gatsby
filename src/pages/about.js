@@ -21,20 +21,20 @@ export default ({ data }) => {
 
       <div className={pageStyles.sections}>
         <header className={pageStyles.section}>
-          <h1 className={`${pageStyles.logo} ${pageStyles.isSmall}`}>Role</h1>
+          <div className={`${pageStyles.logo} ${pageStyles.isSmall}`}>Role</div>
         </header>
       </div>
 
       <div className={`${pageStyles.sections} ${pageStyles.isWhite}`}>
         <section className={pageStyles.section}>
           <div className={pageStyles.sectionContent}>
-            <h2 className={`heading1 is-centered red ${pageStyles.sectionHeading1}`}>About</h2>
+            <h1 className={`heading1 is-centered red ${pageStyles.sectionHeading1}`}>About Us</h1>
           </div>
         </section>
 
         <section className={pageStyles.section}>
           <div className={pageStyles.sectionContent}>
-            <h2 className={`heading2 ${pageStyles.sectionHeading2}`}>Our Founders</h2>
+            <h2 className={`heading2 is-centered ${pageStyles.sectionHeading2}`}>Our Founders</h2>
             <p className={pageStyles.leftContent}>
               Role was founded by Logan Dwight and Ian Hirschfeld, two best friends that met when they were just 13
               years old.
@@ -44,7 +44,7 @@ export default ({ data }) => {
 
         <section className={pageStyles.section}>
           <div className={pageStyles.sectionContent}>
-            <h2 className={`heading2 ${pageStyles.sectionHeading2}`}>The History of Role</h2>
+            <h2 className={`heading2 is-centered ${pageStyles.sectionHeading2}`}>The History of Role</h2>
           </div>
 
           <div className={`${pageStyles.leftContent} ${styles.history}`}>
@@ -172,7 +172,7 @@ export default ({ data }) => {
 
         <section className={pageStyles.section}>
           <div className={pageStyles.sectionContent}>
-            <h2 className={`heading2 ${pageStyles.sectionHeading2}`}>A Special Thank You</h2>
+            <h2 className={`heading1 is-centered teal ${pageStyles.sectionHeading3}`}>A Special Thank You</h2>
             <p>
               A huge and wonderful thank you to all of our{' '}
               <a

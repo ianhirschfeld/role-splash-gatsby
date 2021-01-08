@@ -48,6 +48,9 @@ class Layout extends Component {
         <Link className={styles.navItem} to="/about">
           About
         </Link>
+        <Link className={styles.navItem} to="/changelog">
+          Changelog
+        </Link>
         <a className={styles.navItem} href="https://blog.playrole.com">
           Blog
         </a>
