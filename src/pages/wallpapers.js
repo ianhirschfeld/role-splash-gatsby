@@ -21,10 +21,10 @@ export default ({ data }) => {
         <section className={pageStyles.section}>
           <div className={pageStyles.sectionContent}>
             <h2 className={`heading1 is-centered red ${pageStyles.sectionHeading1}`}>Wallpapers</h2>
-            <div className={styles.wallpapers}>
+            <div className={`${pageStyles.leftContent} ${styles.wallpapers}`}>
               <div className={styles.wallpaperPreview} />
               <p>Every World Wallpaper</p>
-              <ul className="unstyled">
+              <ul>
                 <li>
                   <a href="/wallpapers/Role_EveryWorld_Wallpaper_16x10.jpg" download>
                     Download 16x10

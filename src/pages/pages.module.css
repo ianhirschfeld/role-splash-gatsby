@@ -16,19 +16,42 @@
 
 .section {
   max-width: var(--content-width);
-  margin: 36px auto;
+  margin: 54px auto;
   padding-left: 18px;
   padding-right: 18px;
   font-size: 1.8rem;
 }
 
-.section p {
+.section:first-child {
+  margin-top: 0;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.section p,
+.section ul {
   margin-bottom: 36px;
+  line-height: 1.4;
+}
+
+.section p:last-child,
+.section ul:last-child {
+  margin-bottom: 0;
+}
+
+.section ul {
+  padding-left: 36px;
 }
 
 .section-content {
   max-width: var(--content-width-narrow);
   margin: 0 auto;
+}
+
+.left-content {
+  text-align: left;
 }
 
 .section-heading1 {

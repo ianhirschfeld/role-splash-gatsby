@@ -33,6 +33,7 @@ export default ({ data }) => {
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
+                title="Welcome to Role"
               ></iframe>
             </div>
           </div>
@@ -81,13 +82,13 @@ export default ({ data }) => {
       </header>
 
       <div className={`${pageStyles.sections} ${pageStyles.isWhite}`}>
-        <h2 className={`heading1 is-centered red ${pageStyles.sectionHeading1}`}>You can play with us</h2>
+        <h2 className={`heading1 is-centered red ${pageStyles.sectionHeading1}`}>You Can Play With Us</h2>
 
         <section className={`${pageStyles.section} ${styles.interface}`}>
           <div className={`${styles.interfaceImageContainer} ${styles.interfaceTable}`}>
             <div className={styles.interfaceImage}>Role Interface: Table</div>
           </div>
-          <h3 className={`heading3 is-centered ${pageStyles.sectionHeading3}`}>Video play for Everyone</h3>
+          <h3 className={`heading3 is-centered ${pageStyles.sectionHeading3}`}>Video Play for Everyone</h3>
           <div className={pageStyles.sectionContent}>
             <p>
               Play with your friends using crisp, high-quality, stable video chat! Role puts the best part of the game
@@ -144,7 +145,7 @@ export default ({ data }) => {
         <section className={pageStyles.section}>
           <div className={`${pageStyles.sectionContent} ${styles.interfaceSignup}`}>
             <h3 className={`heading3 is-centered ${pageStyles.sectionHeading3}`}>Join the Role Community</h3>
-            <a href="https://app.playrole.com/signup" className={`button ${styles.signupButton}`}>
+            <a href="https://app.playrole.com/signup" className={`button ${pageStyles.button}`}>
               Sign Up
             </a>
           </div>
@@ -181,7 +182,7 @@ export default ({ data }) => {
           <p>
             <strong>Sign up and get started today:</strong>
           </p>
-          <a href="https://app.playrole.com/signup" className={`button ${styles.signupButton}`}>
+          <a href="https://app.playrole.com/signup" className={`button ${pageStyles.button}`}>
             Sign Up
           </a>
         </section>

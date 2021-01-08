@@ -25,8 +25,8 @@ export default ({ data }) => {
             <br />
             Privacy Policy
           </h2>
-          <h3 className={`heading2 is-centered ${pageStyles.sectionHeading3}`}>Last Updated March, 2020</h3>
-          <div className={styles.legalContent}>
+          <h3 className={`heading2 is-centered ${pageStyles.sectionHeading2}`}>Last Updated March, 2020</h3>
+          <div className={pageStyles.leftContent}>
             <p>
               Role, Inc. (“<strong>Role</strong>,” “<strong>we</strong>,” “<strong>us</strong>,” or “
               <strong>our</strong>”) has prepared this Privacy Policy to explain what Personal Data (defined below) we
