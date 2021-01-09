@@ -16,7 +16,7 @@ export default ({ data }) => {
       </Helmet>
 
       <header className={styles.sections}>
-        <h1 className={styles.logo}>Role</h1>
+        <h1 className={`${styles.logo} ${styles.isSmall}`}>Role</h1>
       </header>
 
       <div className={styles.sections}>

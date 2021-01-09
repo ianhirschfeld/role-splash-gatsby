@@ -31,12 +31,18 @@
   margin-bottom: 14px;
 }
 
+.page-nav a {
+  margin: 0 9px;
+}
+
+.page-nav a,
 .back {
   color: var(--color-dark-grey);
   font-size: 1.4rem;
   font-weight: bold;
 }
 
+.page-nav svg,
 .back svg {
   width: 9px;
   height: 9px;
@@ -44,6 +50,13 @@
   transform: rotateZ(90deg);
 }
 
+.page-nav path,
 .back path {
   fill: var(--color-dark-grey);
+}
+
+.next-page svg {
+  margin-left: 9px;
+  margin-right: 0;
+  transform: rotateZ(-90deg);
 }

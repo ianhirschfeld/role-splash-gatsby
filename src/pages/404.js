@@ -11,7 +11,7 @@ export default () => (
     <SEO title="404: Not Found" />
 
     <header className={styles.sections}>
-      <h1 className={styles.logo}>Role</h1>
+      <h1 className={`${styles.logo} ${styles.isSmall}`}>Role</h1>
     </header>
 
     <div className={styles.sections}>
