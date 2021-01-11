@@ -46,11 +46,11 @@ export default ({ data }) => {
               (He/Him) have been working together since they were kids - building websites, designing games, and telling
               stories every step of the way. As best friends and co-founders, Ian & Logan believe in the transformative
               power of cooperative imagination and group play. Having built the first Role app in 2015 (now known as
-              Role Classic on iOS), the pair have been overwhelmed by the positive impact their work has had - reaching
-              over 100,000 players worldwide. Now, they have returned to their passion project together, and have
-              re-launched Role as the world's premier online video play platform for RPGs and the communities around
-              them. With nearly two decades of work behind them, including founding two companies together, they know
-              this is only the beginning of great adventures to come!
+              Role Classic on iOS), we have been overwhelmed by the positive impact their work has had - reaching over
+              100,000 players worldwide. Now, we have returned to our passion project together, and have re-launched
+              Role as the world's premier online video play platform for RPGs and the communities around them. With
+              nearly two decades of work behind us, including founding two companies together, we know this is only the
+              beginning of great adventures to come!
             </p>
           </div>
         </section>
@@ -105,31 +105,31 @@ export default ({ data }) => {
                 </strong>
               </p>
               <p>
-                Since the mobile app was a side project, we put no money into marketing it. Through purely organic
-                growth and searches on the App Store, we hit this amazing milestone. It was the first time we did a
-                double take at this project and started to consider a potential future for it.
+                The first version of Role was a side project, one we didn't think to invest any time or money into
+                marketing. To our surprise &amp; delight, through purely organic growth, we hit this amazing milestone.
+                This was the first time we realized this project had a much bigger future ahead of it.
               </p>
             </div>
 
             <h3 className={`heading3 ${pageStyles.sectionHeading3}`}>May 2019</h3>
             <div>
               <p>
-                Logan begins doing some serious research into what led us to 100k players. At the same time, they start
-                doing market research into the TTRPG industry. There is an inkling that something huge is brewing.
+                Logan began doing more serious research into the TTRPG industry &amp; market factors that had led us to
+                over 100k players. There was an inkling that something huge was brewing.
               </p>
               <p>
                 We had been receiving lots of great feedback from our mobile app player base, and as time went on, an
-                idea solidified. We saw some clear gaps in what was possible for TTRPG online and where we felt we could
-                offer the most value. We began to see a path forward where we could take the seed of our ideas from the
-                mobile app, and turn them into a full blown platform!
+                idea solidified. We saw some clear gaps in what was possible for TTRPGs online, and saw an opportunity
+                where we could provide the most value. There was a path forward that would take Role from the initial
+                seed of a simple mobile app, and evolve it into a full-blown online platform!
               </p>
             </div>
 
             <h3 className={`heading3 ${pageStyles.sectionHeading3}`}>Mar 2020</h3>
             <div>
               <p>
-                <strong>Logan and Ian register a new company called Role, Inc.</strong> and they jump full-time into
-                working on the company! Mockups, prototyping, and outreach to players &amp; TTRPG designs begin.
+                <strong>Logan &amp; Ian register a new company called Role, Inc.</strong> We then jumped full-time into
+                building this business. Mockups, prototyping, and outreach to players &amp; TTRPG designs begin.
               </p>
             </div>
 
@@ -167,8 +167,9 @@ export default ({ data }) => {
             <div>
               <p>
                 <strong>Public Early Access goes live</strong>! Just two months after the launch of our Private EA, we
-                decide to open the floodgates. With Public EA, we also launch the first version of our Template Creator
-                tools, allowing players to add support for <em>any</em> TTRPG on Role.
+                decided to open the floodgates. With Public EA, we also launched the first version of our Template
+                Creator suite, allowing players &amp; creators to add support for <em>any</em> TTRPG they want to play
+                on Role!
               </p>
             </div>
 
