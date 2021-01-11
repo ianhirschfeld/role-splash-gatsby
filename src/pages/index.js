@@ -5,7 +5,6 @@ import styles from './index.module.css'
 
 import DoubleArrowIcon from '../images/icons/DoubleArrowIcon.svg'
 
-import GoogleForm from '../components/google-form/google-form'
 import Layout from '../components/Layout'
 import Panel from '../components/Panel'
 import SEO from '../components/seo'
@@ -169,7 +168,46 @@ export default ({ data }) => {
                 worlds you’re dreaming of.
               </strong>
             </p>
-            <GoogleForm />
+
+            <form
+              name="creators"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              action="/creators/thank-you"
+            >
+              <input type="hidden" name="bot-field" />
+              <input type="hidden" name="form-name" value="creators" />
+              <input
+                className={styles.input}
+                type="text"
+                placeholder="First name"
+                aria-label="First name"
+                name="first_name"
+              />
+              <input
+                className={styles.input}
+                type="text"
+                placeholder="Last name"
+                aria-label="Last name"
+                name="last_name"
+              />
+              <input
+                className={styles.input}
+                type="text"
+                placeholder="Email address"
+                aria-label="Email address"
+                name="email"
+              />
+              <input className={styles.input} type="text" placeholder="Website" aria-label="Website" name="website" />
+              <textarea
+                className={styles.textarea}
+                placeholder="Tell us more about you and what you are making..."
+                aria-label="Tell us more about you and what you are making..."
+                name="description"
+              />
+              <input type="submit" value="Contact Us" className={`button ${styles.submitButton}`} />
+            </form>
           </div>
         </section>
       </div>
