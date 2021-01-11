@@ -1,0 +1,61 @@
+.history {
+  display: grid;
+  row-gap: 54px;
+  column-gap: 36px;
+  grid-template-columns: 200px 1fr;
+}
+
+.history h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.tweet {
+  margin-bottom: 36px;
+}
+
+.image {
+  margin-bottom: 36px;
+  border-radius: 18px;
+  text-indent: 100%;
+  word-wrap: nowrap;
+  overflow: hidden;
+}
+
+.image div {
+  height: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.downloads {
+  max-width: 923px;
+}
+
+.downloads div {
+  padding-top: 30.66%;
+  background-image: url('../images/RoleClassicDownloads.png');
+}
+
+.kickstarter {
+  max-width: 512px;
+}
+
+.kickstarter div {
+  height: 0;
+  padding-top: 56.25%;
+  background-image: url('../images/Role_Kickstarter_FINISH.jpg');
+}
+
+.names {
+  margin-top: 36px;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 667px) {
+  .history {
+    row-gap: 36px;
+    grid-template-columns: 1fr;
+  }
+}

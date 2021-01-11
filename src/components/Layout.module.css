@@ -1,0 +1,115 @@
+.background {
+  width: 100vw;
+  height: 100vh;
+  background: url('../images/RoleBackground.jpg') no-repeat center center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.nav {
+  max-width: var(--page-width);
+  margin: 36px auto 0;
+  padding-left: 36px;
+  padding-right: 36px;
+  display: flex;
+  font-size: 1.8rem;
+}
+
+.nav-spacer {
+  flex: 1 1 auto;
+}
+
+.nav-spacer.when-small {
+  flex-basis: 100%;
+  display: none;
+}
+
+.nav-item {
+  margin-right: 18px;
+  padding: 6px 0 0;
+  display: inline-block;
+  color: #fff;
+}
+
+.social-icon {
+  min-width: 36px;
+  width: 36px;
+  height: 36px;
+  margin-right: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-white);
+  border-radius: 50%;
+}
+
+.social-icon span {
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.social-icon svg {
+  width: 60%;
+  height: 60%;
+}
+
+.social-icon path {
+  fill: var(--color-red);
+}
+
+.footer {
+  background: var(--color-white);
+  color: var(--color-dark-grey);
+}
+
+.footer-content {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 18px 36px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.plain-footer {
+  background: none;
+  color: var(--color-white);
+}
+
+.plain-footer a {
+  color: var(--color-white);
+}
+
+@media only screen and (max-width: 999px) {
+  .nav {
+    padding-left: 9px;
+    padding-right: 9px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-spacer {
+    flex-basis: 100%;
+  }
+
+  .nav-spacer.when-small {
+    flex-basis: 100%;
+    display: block;
+  }
+
+  .login-button {
+    margin-top: 36px;
+  }
+
+  .social-icon {
+    margin-bottom: 18px;
+  }
+}
