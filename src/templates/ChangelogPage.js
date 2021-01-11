@@ -37,7 +37,7 @@ class ChangelogPage extends Component {
   }
 
   render() {
-    const { data, pageContext } = this.props
+    const { data } = this.props
     const { posts } = data.changelog
 
     return (

@@ -36,8 +36,21 @@ export default ({ data }) => {
           <div className={pageStyles.sectionContent}>
             <h2 className={`heading2 is-centered ${pageStyles.sectionHeading2}`}>Our Founders</h2>
             <p className={pageStyles.leftContent}>
-              Role was founded by Logan Dwight and Ian Hirschfeld, two best friends that met when they were just 13
-              years old.
+              <a href="https://twitter.com/logandwight" target="_blank" rel="noopener noreferrer">
+                Logan Dwight
+              </a>{' '}
+              (They/Them) and{' '}
+              <a href="https://twitter.com/ianhirschfeld" target="_blank" rel="noopener noreferrer">
+                Ian Hirschfeld
+              </a>{' '}
+              (He/Him) have been working together since they were kids - building websites, designing games, and telling
+              stories every step of the way. As best friends and co-founders, Ian & Logan believe in the transformative
+              power of cooperative imagination and group play. Having built the first Role app in 2015 (now known as
+              Role Classic on iOS), the pair have been overwhelmed by the positive impact their work has had - reaching
+              over 100,000 players worldwide. Now, they have returned to their passion project together, and have
+              re-launched Role as the world's premier online video play platform for RPGs and the communities around
+              them. With nearly two decades of work behind them, including founding two companies together, they know
+              this is only the beginning of great adventures to come!
             </p>
           </div>
         </section>
