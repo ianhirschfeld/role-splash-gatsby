@@ -166,6 +166,11 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
+.recaptcha {
+  margin-bottom: 18px;
+  display: inline-block;
+}
+
 .submit-button {
   width: 100%;
 }

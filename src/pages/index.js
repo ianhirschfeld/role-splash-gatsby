@@ -1,4 +1,5 @@
 import React from 'react'
+import ReCAPTCHA from 'react-google-recaptcha'
 
 import pageStyles from './pages.module.css'
 import styles from './index.module.css'
@@ -218,7 +219,9 @@ export default ({ data }) => {
                 name="description"
                 required
               />
-              <div data-netlify-recaptcha="true" />
+              <div className={styles.recaptcha}>
+                <ReCAPTCHA sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY} />
+              </div>
               <input type="submit" value="Contact Us" className={`button ${styles.submitButton}`} />
             </form>
           </div>
