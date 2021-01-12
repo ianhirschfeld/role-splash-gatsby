@@ -172,9 +172,10 @@ export default ({ data }) => {
             <form
               name="creators"
               method="POST"
-              data-netlify="true"
-              netlify-honeypot="bot-field"
               action="/creators/thank-you"
+              data-netlify="true"
+              data-netlify-recaptcha="true"
+              netlify-honeypot="bot-field"
             >
               <input type="hidden" name="bot-field" />
               <input type="hidden" name="form-name" value="creators" />
@@ -184,6 +185,7 @@ export default ({ data }) => {
                 placeholder="First name"
                 aria-label="First name"
                 name="first_name"
+                required
               />
               <input
                 className={styles.input}
@@ -191,6 +193,7 @@ export default ({ data }) => {
                 placeholder="Last name"
                 aria-label="Last name"
                 name="last_name"
+                required
               />
               <input
                 className={styles.input}
@@ -198,14 +201,24 @@ export default ({ data }) => {
                 placeholder="Email address"
                 aria-label="Email address"
                 name="email"
+                required
               />
-              <input className={styles.input} type="text" placeholder="Website" aria-label="Website" name="website" />
+              <input
+                className={styles.input}
+                type="text"
+                placeholder="Website"
+                aria-label="Website"
+                name="website"
+                required
+              />
               <textarea
                 className={styles.textarea}
                 placeholder="Tell us more about you and what you are making..."
                 aria-label="Tell us more about you and what you are making..."
                 name="description"
+                required
               />
+              <div data-netlify-recaptcha="true" />
               <input type="submit" value="Contact Us" className={`button ${styles.submitButton}`} />
             </form>
           </div>
