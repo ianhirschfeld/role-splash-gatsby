@@ -1,11 +1,11 @@
 import React from 'react'
+import ReCAPTCHA from 'react-google-recaptcha'
 
 import pageStyles from './pages.module.css'
 import styles from './index.module.css'
 
 import DoubleArrowIcon from '../images/icons/DoubleArrowIcon.svg'
 
-import GoogleForm from '../components/google-form/google-form'
 import Layout from '../components/Layout'
 import Panel from '../components/Panel'
 import SEO from '../components/seo'
@@ -169,7 +169,61 @@ export default ({ data }) => {
                 worlds you’re dreaming of.
               </strong>
             </p>
-            <GoogleForm />
+
+            <form
+              name="creators"
+              method="POST"
+              action="/creators/thank-you"
+              data-netlify="true"
+              data-netlify-recaptcha="true"
+              netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="bot-field" />
+              <input type="hidden" name="form-name" value="creators" />
+              <input
+                className={styles.input}
+                type="text"
+                placeholder="First name"
+                aria-label="First name"
+                name="first_name"
+                required
+              />
+              <input
+                className={styles.input}
+                type="text"
+                placeholder="Last name"
+                aria-label="Last name"
+                name="last_name"
+                required
+              />
+              <input
+                className={styles.input}
+                type="text"
+                placeholder="Email address"
+                aria-label="Email address"
+                name="email"
+                required
+              />
+              <input
+                className={styles.input}
+                type="text"
+                placeholder="Website"
+                aria-label="Website"
+                name="website"
+                required
+              />
+              <textarea
+                className={styles.textarea}
+                placeholder="Tell us more about you and what you are making..."
+                aria-label="Tell us more about you and what you are making..."
+                name="description"
+                required
+              />
+              <div className={styles.recaptcha}>
+                <ReCAPTCHA sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY} />
+              </div>
+              <input type="submit" value="Contact Us" className={`button ${styles.submitButton}`} />
+            </form>
           </div>
         </section>
       </div>
