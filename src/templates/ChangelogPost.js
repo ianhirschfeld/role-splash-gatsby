@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 import pageStyles from '../pages/pages.module.css'
 import styles from './changelog.module.css'
@@ -38,6 +39,11 @@ class ChangelogPost extends Component {
             <div className={`text-light-grey ${styles.subtitle}`}>
               v{frontmatter.version} - {frontmatter.date}
             </div>
+            {frontmatter.featuredImage && (
+              <div className={styles.featureImage}>
+                <Img fluid={frontmatter.featuredImage.childImageSharp.fluid} />
+              </div>
+            )}
             <div dangerouslySetInnerHTML={{ __html: html }} className={styles.content} />
           </section>
         </div>
@@ -56,6 +62,13 @@ export const query = graphql`
         title
         version
         date(formatString: "MMMM Do, YYYY")
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 940) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

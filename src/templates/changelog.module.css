@@ -9,9 +9,20 @@
   font-size: 1.4rem;
 }
 
+.feature-image {
+  margin: 18px 0;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
 .content {
   margin: 18px 0 36px;
   text-align: left;
+}
+
+.content h3 {
+  margin: 18px 0;
+  font-size: 2rem;
 }
 
 .content ul {
