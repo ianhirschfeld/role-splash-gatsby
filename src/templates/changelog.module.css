@@ -27,7 +27,8 @@
 
 .content ul {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 36px;
+  line-height: 1.4;
 }
 
 .content ul p {
