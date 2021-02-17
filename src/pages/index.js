@@ -21,32 +21,26 @@ export default ({ data }) => {
         </section>
 
         <section className={pageStyles.section}>
-          <h2 className={`heading1 is-centered green`}>Early Access is here!</h2>
-          <h3 className={`heading1 is-centered ${pageStyles.logoSubheading}`}>Now open to everyone</h3>
+          <h2 className={`heading1 is-centered ${pageStyles.logoSubheading}`}>
+            Welcome to a new kind of Role-Playing platform, focused on Video-First group play & easy Game creation.
+          </h2>
         </section>
 
         <section className={pageStyles.section}>
-          <div className={`${pageStyles.sectionContent} ${styles.videoWrapper}`}>
-            <div className={styles.video}>
-              <iframe
-                src="https://www.youtube.com/embed/4m__7eYDWlw"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                title="Welcome to Role"
-              ></iframe>
+          <div className={styles.bannerContainer}>
+            <div className={`${styles.imageContainer} ${styles.bannerImageContainer}`}>
+              <div
+                className={`${styles.image} ${styles.bannerImage}`}
+                title="Role Interface: Table - Video Grid & Character Sheet"
+              >
+                Role Interface: Table - Video Grid & Character Sheet
+              </div>
             </div>
           </div>
 
-          <Panel className={`${pageStyles.sectionContent} ${styles.signupPanel}`}>
-            <p>
-              Role is currently in Early Access, with new features being added every month. Support Role now, and
-              receive a discount on your first year subsciption when Early Access ends.
-            </p>
-            <p>
-              <em>Kickstarter Backers: check your email for an invite link.</em>
-            </p>
-            <a href="https://app.playrole.com/signup" className="button is-pink heading2 is-centered">
+          <Panel className={`${styles.bannerContainer} ${styles.signupPanel}`}>
+            <p className="heading2">Role is currently in Early Access</p>
+            <a href="https://app.playrole.com/signup" className={`button ${pageStyles.button}`}>
               Sign Up
             </a>
             <div className={styles.panelAccount}>
@@ -60,9 +54,6 @@ export default ({ data }) => {
 
         <section className={pageStyles.section}>
           <p className="heading2 is-centered">
-            Welcome to a new kind of Role-Playing platform, focused on people-first imaginative group play.
-          </p>
-          <p className="heading2 is-centered">
             Play your way with high-quality video chat, simple & intuitive gameplay tools, and easy code-free
             customization for playing any game you can imagine.
           </p>
@@ -74,7 +65,7 @@ export default ({ data }) => {
         </section>
 
         <section className={pageStyles.section}>
-          <h2 className="heading1 is-centered">Welcome Home</h2>
+          <div className="heading1 is-centered">Welcome Home</div>
           <div className={styles.arrow}>
             <DoubleArrowIcon />
           </div>
@@ -82,39 +73,100 @@ export default ({ data }) => {
       </header>
 
       <div className={`${pageStyles.sections} ${pageStyles.isWhite}`}>
-        <h2 className={`heading1 is-centered red ${pageStyles.sectionHeading1}`}>You Can Play With Us</h2>
+        <h2 className={`heading1 is-centered red ${pageStyles.sectionHeading1}`}>What is Role?</h2>
 
-        <section className={`${pageStyles.section} ${styles.interface}`}>
-          <div className={`${styles.interfaceImageContainer} ${styles.interfaceTable}`}>
-            <div className={styles.interfaceImage}>Role Interface: Table</div>
+        <section className={pageStyles.section}>
+          <p>
+            Role is a better way to play your favorite RPGs online. From D&D to indie games, Role puts the best part of
+            playing front-and-center: the people! Intuitive tools for for playing & creating games all live seamlessly
+            in a clear and powerful interface. Keep prep time low and gameplay breezy.
+          </p>
+          <p>
+            <strong>
+              With Role, you can enjoy everything you need to play - without the headache of cumbersome complex tools.
+            </strong>
+          </p>
+
+          <div className={styles.imageGrid}>
+            <div className={`box-shadow ${styles.imageContainer} ${styles.imageGridPrimary}`}>
+              <div
+                className={`${styles.image} ${styles.imageGrid1}`}
+                title="Role Interface: Table - Dice Roller & Character Sheet"
+              >
+                Role Interface: Table - Dice Roller & Character Sheet
+              </div>
+            </div>
+            <div className={`box-shadow ${styles.imageContainer} ${styles.imageGridSecondary}`}>
+              <div
+                className={`${styles.image} ${styles.imageGrid2}`}
+                title="Role Interface: Table - Maps, Tokens, & Drawing"
+              >
+                Role Interface: Table - Maps, Tokens, & Drawing
+              </div>
+            </div>
+            <div className={`box-shadow ${styles.imageContainer} ${styles.imageGridSecondary}`}>
+              <div className={`${styles.image} ${styles.imageGrid3}`} title="Role Interface: Template Creator">
+                Role Interface: Template Creator
+              </div>
+            </div>
           </div>
-          <h3 className={`heading3 is-centered ${pageStyles.sectionHeading3}`}>Video Play for Everyone</h3>
-          <div className={pageStyles.sectionContent}>
-            <p>
-              Play with your friends using crisp, high-quality, stable video chat! Role puts the best part of the game
-              front-and-center: the people. Intuitive tools for managing character sheets, rolling dice, and drawing
-              cards all live seamlessly within the video experience - allowing you to keep gameplay moving quickly so
-              you can focus on the adventure. Add visual aids to your game via images, maps, and tokens all easily
-              uploaded via your Asset Tray. With Role, you can enjoy everything you need to play - without the headache
-              of cumbersome complex tools.
-            </p>
+
+          <div className={styles.features}>
+            <div className={styles.feature}>
+              <h3 className={`heading1 is-centered teal ${styles.featureHeading}`}>HD Video</h3>
+              <p>Enjoy unlimited stable HD video play, front and center where it belongs.</p>
+            </div>
+            <div className={styles.feature}>
+              <h3 className={`heading1 is-centered teal ${styles.featureHeading}`}>Intuitive Sheets</h3>
+              <p>No more aimless searching for information. Navigate quickly with our automatic table of contents.</p>
+            </div>
+            <div className={styles.feature}>
+              <h3 className={`heading1 is-centered teal ${styles.featureHeading}`}>Dice & Stats</h3>
+              <p>
+                Everything you need to track rolls, stat buffs, over/under scoring, pools, and more - right at your
+                fingertips.
+              </p>
+            </div>
+            <div className={styles.feature}>
+              <h3 className={`heading1 is-centered teal ${styles.featureHeading}`}>Easy Assets</h3>
+              <p>Cut down on prep time. Upload and manage reference images, PDFs, and more - quickly and easy.</p>
+            </div>
+            <div className={styles.feature}>
+              <h3 className={`heading1 is-centered teal ${styles.featureHeading}`}>Maps & Tokens</h3>
+              <p>
+                Make any image into a map! Easily add tokens of any size, draw in real-time, and share with your party.
+              </p>
+            </div>
+            <div className={styles.feature}>
+              <h3 className={`heading1 is-centered teal ${styles.featureHeading}`}>Play Anything</h3>
+              <p>Our template creator allows you to quickly build templates for any game, all 100% code-free.</p>
+            </div>
           </div>
+
+          <a href="https://app.playrole.com/signup" className={`button ${pageStyles.button}`}>
+            Sign Up
+          </a>
         </section>
 
-        <section className={`${pageStyles.section} ${styles.interface}`}>
-          <div className={`${styles.interfaceImageContainer} ${styles.interfaceTemplateCreator}`}>
-            <div className={styles.interfaceImage}>Role Interface: Template Creator</div>
+        <h2 className={`heading1 is-centered red ${pageStyles.sectionHeading1}`}>Every Game You Can Imagine</h2>
+
+        <div className={styles.games}>
+          <div className={`${styles.imageContainer} ${styles.gamesImageContainer}`}>
+            <div
+              className={`${styles.image} ${styles.gamesImage}`}
+              title="Numenera, Dungeions & Dragons, Mothership, Lancer, Mork Borg, Swordsfall, Masks"
+            >
+              Numenera, Dungeions & Dragons, Mothership, Lancer, Mork Borg, Swordsfall, Masks
+            </div>
           </div>
-          <h3 className={`heading3 is-centered ${pageStyles.sectionHeading3}`}>Play Anything You Can Imagine</h3>
-          <div className={pageStyles.sectionContent}>
-            <p>
-              With the Role Template Creator, you can quickly and easily craft gameplay templates for any game you want
-              to play - even homebrew content! Go as simple or as complex as you want with powerful code-free
-              customization tools. Create automated game mechanics by linking elements together. Share your creations
-              with your friends and community. Everything you create is guaranteed to work on Role, so you can focus on
-              getting back to your favorite adventure.
-            </p>
-          </div>
+        </div>
+
+        <section className={pageStyles.section}>
+          <p>
+            With official support for many of your favorite games, Role’s template library is growing every day. Don’t
+            see the game you want to play? Easy game template creation means you can quickly create sheets for any game
+            in your library - even custom homebrew hacks! With Role, there’s no limit to the adventures you can enjoy.
+          </p>
         </section>
 
         <h2 className={`heading1 is-centered red ${pageStyles.sectionHeading1}`}>Coming Soon...</h2>
@@ -142,18 +194,186 @@ export default ({ data }) => {
           </div>
         </section>
 
-        <section className={pageStyles.section}>
-          <div className={`${pageStyles.sectionContent} ${styles.interfaceSignup}`}>
-            <h3 className={`heading3 is-centered ${pageStyles.sectionHeading3}`}>Join the Role Community</h3>
-            <a href="https://app.playrole.com/signup" className={`button ${pageStyles.button}`}>
-              Sign Up
-            </a>
+        <a href="https://app.playrole.com/signup" className={`button ${pageStyles.button}`}>
+          Sign Up
+        </a>
+
+        <h2 className={`heading1 is-centered red ${pageStyles.sectionHeading1}`}>Loved by Players and Game Masters</h2>
+
+        <section className={`${pageStyles.section} ${styles.testimonialsSection}`}>
+          <div className={styles.testimonials}>
+            <div className={styles.testimonialsColumn}>
+              <Panel className={styles.testimonial}>
+                <p className={styles.testimonialQuote}>
+                  “The @roleapp is a complete game changer. Utterly beautiful... it has everything we need.
+                  <br />
+                  1. Stability
+                  <br />
+                  2. Ease of Use
+                  <br />
+                  3. Customization for any scenario.”
+                </p>
+                <div className={styles.testimonialAuthor}>
+                  -{' '}
+                  <a
+                    className="teal"
+                    href="https://twitter.com/Antifreke/status/1334552793764536320"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    @Antifreke
+                  </a>
+                </div>
+              </Panel>
+              <Panel className={styles.testimonial}>
+                <p className={styles.testimonialQuote}>
+                  “This platform is truly incredible. Switching fully from Skype/Roll20 to Role. Audio and video are
+                  awesome. Great great quality. Loving it so far. Been looking for a platform that lets me create my own
+                  sheets for years now.”
+                </p>
+                <div className={styles.testimonialAuthor}>
+                  -{' '}
+                  <a
+                    className="teal"
+                    href="https://discord.com/channels/782099129769656321/783077831822934017/791423803410481214"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    @Gabe
+                  </a>
+                </div>
+              </Panel>
+              <Panel className={styles.testimonial}>
+                <p className={styles.testimonialQuote}>
+                  “This honestly feels like the best way to play DotD online. Highly recommend people check it out.”
+                </p>
+                <div className={styles.testimonialAuthor}>
+                  -{' '}
+                  <a
+                    className="teal"
+                    href="https://twitter.com/DevTheGuy/status/1339066358982643712"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    @DevTheGuy
+                  </a>
+                </div>
+              </Panel>
+            </div>
+            <div className={styles.testimonialsColumn}>
+              <Panel className={styles.testimonial}>
+                <p className={styles.testimonialQuote}>
+                  “Sound quality is perhaps the best we’ve had, beating Discord, Roll20 and even Zoom. Fantastic quality
+                  and no disconnects”
+                </p>
+                <div className={styles.testimonialAuthor}>
+                  -{' '}
+                  <a
+                    className="teal"
+                    href="https://twitter.com/brumpolarbears/status/1334253170399342596"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    @brumpolarbears
+                  </a>
+                </div>
+              </Panel>
+              <Panel className={styles.testimonial}>
+                <p className={styles.testimonialQuote}>
+                  “Things I love about @roleapp:
+                  <br />- UI is Clean/Easy to Read
+                  <br />- Love the Camera and Mic is right there without needing a 3rd Party Program
+                  <br />- Making Character Sheets is Simple”
+                </p>
+                <div className={styles.testimonialAuthor}>
+                  -{' '}
+                  <a
+                    className="teal"
+                    href="https://twitter.com/CroxMarcus/status/1359026131358384130"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    @CroxMarcus
+                  </a>
+                </div>
+              </Panel>
+              <Panel className={styles.testimonial}>
+                <p className={styles.testimonialQuote}>
+                  “I'm so impressed with Role. We had our first session, the audio was perfect, video was very stable,
+                  and one player spontaneously said, "wow, even filling my sheet out is fun". Everybody loved how Role
+                  never got in the way.”
+                </p>
+                <div className={styles.testimonialAuthor}>
+                  -{' '}
+                  <a
+                    className="teal"
+                    href="https://discord.com/channels/782099129769656321/783077831822934017/790861415879147530"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    @Jan
+                  </a>
+                </div>
+              </Panel>
+            </div>
+            <div className={styles.testimonialsColumn}>
+              <Panel className={styles.testimonial}>
+                <p className={styles.testimonialQuote}>
+                  “The first time playing online without paper sheets next to us. With Role for character sheets, it
+                  felt real in a way it hasn’t since quarantine. Thank you @roleapp.”
+                </p>
+                <div className={styles.testimonialAuthor}>
+                  -{' '}
+                  <a
+                    className="teal"
+                    href="https://twitter.com/FoxAndBadgerRPG/status/1349184712279957507"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    @FoxAndBadgerRPG
+                  </a>
+                </div>
+              </Panel>
+              <Panel className={styles.testimonial}>
+                <p className={styles.testimonialQuote}>
+                  “Not gonna lie, right now all our plans for live streaming future games are hinging on this platform.”
+                </p>
+                <div className={styles.testimonialAuthor}>
+                  -{' '}
+                  <a
+                    className="teal"
+                    href="https://twitter.com/dicewarriors/status/1331708593612206085"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    @dicewarriors
+                  </a>
+                </div>
+              </Panel>
+              <Panel className={styles.testimonial}>
+                <p className={styles.testimonialQuote}>
+                  “I’ve only run games on Role a couple of times, but the video and audio was absolutely silky smooth
+                  both times. Got very positive comments from the players about the interface.”
+                </p>
+                <div className={styles.testimonialAuthor}>
+                  -{' '}
+                  <a
+                    className="teal"
+                    href="https://discord.com/channels/782099129769656321/783077831822934017/789155214770700308"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    @Bill
+                  </a>
+                </div>
+              </Panel>
+            </div>
           </div>
         </section>
       </div>
 
       <div className={pageStyles.sections}>
-        <h2 className="heading1 is-centered">Are You a Game Creator?</h2>
+        <h2 className="heading1 is-centered">Are You a Game Creator or Publisher?</h2>
 
         <section className={pageStyles.section}>
           <div className={pageStyles.sectionContent}>
@@ -229,13 +449,10 @@ export default ({ data }) => {
       </div>
 
       <div className={`${pageStyles.sections} ${pageStyles.isWhite}`}>
-        <h2 className={`heading1 is-centered teal ${pageStyles.sectionHeading1}`}>Early Access Open Now</h2>
+        <h2 className={`heading1 is-centered teal ${pageStyles.sectionHeading1}`}>Early Access Now Open</h2>
         <section className={pageStyles.section}>
           <h3 className={`heading3 is-centered ${pageStyles.sectionHeading3}`}>Your Next Great Adventure Awaits</h3>
-          <p>Role is currently in Early Access, now open to everyone! Want to be among the first to play?</p>
-          <p>
-            <strong>Sign up and get started today:</strong>
-          </p>
+          <br />
           <a href="https://app.playrole.com/signup" className={`button ${pageStyles.button}`}>
             Sign Up
           </a>

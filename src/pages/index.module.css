@@ -1,27 +1,46 @@
-.video-wrapper {
-  margin-bottom: 18px;
-}
-
-.video {
-  padding-top: 56.25%;
+.image-container {
+  width: 100%;
   position: relative;
+  margin: 0 auto;
 }
 
-.video iframe {
+.image {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.banner-container {
+  max-width: 749px;
+  margin: 0 auto;
+}
+
+.banner-image-container {
+  padding-top: 64.75%;
+}
+
+.banner-image {
+  background-image: url('../images/Role_Interface_Table_VideoGrid.jpg');
 }
 
 .signup-panel {
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
   font-size: 1.4rem;
 }
 
 .signup-panel p {
   max-width: 420px;
   margin: 0 auto 18px;
+  font-size: 1.4rem;
 }
 
 .panel-account {
@@ -48,41 +67,59 @@
   margin-bottom: 0;
 }
 
-.interface-image-container {
-  width: 100%;
-  margin-top: 36px;
+.image-grid {
+  margin: 36px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 18px;
+}
+
+.image-grid-primary {
+  padding-top: 55.99%;
+  grid-column-end: span 2;
+}
+
+.image-grid-secondary {
+  padding-top: 55.94%;
+}
+
+.image-grid1 {
+  background-image: url('../images/Role_Interface_Table_DiceRoller.jpg');
+}
+
+.image-grid2 {
+  background-image: url('../images/Role_Interface_Table_Maps.jpg');
+}
+
+.image-grid3 {
+  background-image: url('../images/Role_Interface_TemplateCreator.jpg');
+}
+
+.features {
   margin-bottom: 36px;
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px 36px;
 }
 
-.interface-table {
-  padding-top: 62.89%;
+.feature {
 }
 
-.interface-template-creator {
-  padding-top: 58.2%;
+.feature-heading {
+  margin-bottom: 5px;
 }
 
-.interface-image {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: contain;
-  text-indent: 100%;
-  overflow: hidden;
-  white-space: nowrap;
+.games {
+  max-width: 1168px;
+  margin: 0 auto;
 }
 
-.interface-table .interface-image {
-  background-image: url('../images/RoleInterface_Table.jpg');
+.games-image-container {
+  padding-top: 34.42%;
 }
 
-.interface-template-creator .interface-image {
-  background-image: url('../images/RoleInterface_TemplateCreator.jpg');
+.games-image {
+  background-image: url('../images/SupportedGameLogos.png');
 }
 
 .pillar {
@@ -121,9 +158,36 @@
   background-image: url('../images/FillYourTableInterface.png');
 }
 
-.interface-signup {
-  padding-top: 36px;
-  border-top: 1px solid var(--color-light-grey);
+.testimonials-section {
+  max-width: 1200px;
+}
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.testimonials-column {
+  width: calc(100% / 3);
+  padding: 0 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial {
+  margin-bottom: 36px;
+  text-align: left;
+}
+
+.testimonial-quote {
+  margin-bottom: 9px !important;
+  font-style: italic;
+}
+
+.testimonial-author {
+  text-align: right;
 }
 
 .wallpapers p {

@@ -74,8 +74,8 @@
 }
 
 .logo {
-  width: 214px;
-  height: 221px;
+  width: 165px;
+  height: 170px;
   margin: 0 auto 36px;
   background: url('../images/RoleLogo.png') no-repeat 0 0;
   background-size: contain;
@@ -84,16 +84,16 @@
 }
 
 .is-small {
-  width: 107px;
-  height: 111px;
 }
 
 .logo-subheading {
-  font-size: 1.4rem !important;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 2.4rem !important;
 }
 
 .button {
-  max-width: 420px;
+  max-width: 549px;
   margin: 0 auto;
 }
 

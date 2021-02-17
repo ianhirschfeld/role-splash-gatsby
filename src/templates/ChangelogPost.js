@@ -14,10 +14,11 @@ class ChangelogPost extends Component {
   render() {
     const { data } = this.props
     const { frontmatter, html } = data.changelog
+    const { date, featuredImage, title, version } = frontmatter
 
     return (
       <Layout>
-        <SEO title="Changelog" description="Updates and improvements to the Role platform." />
+        <SEO title={`Changelog: ${title}`} description="Updates and improvements to the Role platform." />
 
         <header className={pageStyles.sections}>
           <div className={`${pageStyles.logo} ${pageStyles.isSmall}`}>Role</div>
@@ -35,13 +36,13 @@ class ChangelogPost extends Component {
           </section>
 
           <section className={pageStyles.section}>
-            <h2 className={`heading2 is-centered ${styles.title}`}>{frontmatter.title}</h2>
+            <h2 className={`heading2 is-centered ${styles.title}`}>{title}</h2>
             <div className={`text-light-grey ${styles.subtitle}`}>
-              v{frontmatter.version} - {frontmatter.date}
+              v{version} - {date}
             </div>
-            {frontmatter.featuredImage && (
+            {featuredImage && (
               <div className={styles.featureImage}>
-                <Img fluid={frontmatter.featuredImage.childImageSharp.fluid} />
+                <Img fluid={featuredImage.childImageSharp.fluid} />
               </div>
             )}
             <div dangerouslySetInnerHTML={{ __html: html }} className={styles.content} />
