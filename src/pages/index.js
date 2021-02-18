@@ -55,9 +55,9 @@ export default ({ data }) => {
         <section className={pageStyles.section}>
           <p className="heading2 is-centered">
             Play your way with high-quality video chat, simple & intuitive gameplay tools, and easy code-free
-            customization for playing any game you can imagine.
+            customization for playing any Role-Playing game you can imagine.
           </p>
-          <p className="heading2 is-centered">
+          <p className="heading3 is-centered">
             Every story, every world, every version of you.
             <br />
             This is your Game Table. This is Role.
@@ -77,9 +77,12 @@ export default ({ data }) => {
 
         <section className={pageStyles.section}>
           <p>
-            Role is a better way to play your favorite RPGs online. From D&D to indie games, Role puts the best part of
-            playing front-and-center: the people! Intuitive tools for for playing & creating games all live seamlessly
-            in a clear and powerful interface. Keep prep time low and gameplay breezy.
+            <strong>Are you tired of complex virtual tabletops that don’t fit your game?</strong>
+          </p>
+          <p>
+            Role is a better way to play your favorite tabletop RPGs online. From D&D to indie games, Role puts the best
+            part of playing front-and-center: the people! Intuitive tools for for playing & creating games all live
+            seamlessly in a clear and powerful interface. Keep prep time low and gameplay breezy.
           </p>
           <p>
             <strong>
@@ -168,35 +171,6 @@ export default ({ data }) => {
             in your library - even custom homebrew hacks! With Role, there’s no limit to the adventures you can enjoy.
           </p>
         </section>
-
-        <h2 className={`heading1 is-centered red ${pageStyles.sectionHeading1}`}>Coming Soon...</h2>
-
-        <section className={pageStyles.section}>
-          <div className={styles.pillar}>
-            <div className={styles.pillarImageContainer}>
-              <div className={`${styles.pillarImage} ${styles.imagePlay}`} />
-            </div>
-            <h3 className={`heading3 is-centered ${pageStyles.sectionHeading3}`}>Play Something New</h3>
-            <p>
-              It doesn’t matter if you’re a brand new player or a seasoned veteran. The Role marketplace will help you
-              discover, explore, and learn new games that meet your style.
-            </p>
-          </div>
-          <div className={styles.pillar}>
-            <div className={styles.pillarImageContainer}>
-              <div className={`${styles.pillarImage} ${styles.imageTable}`} />
-            </div>
-            <h3 className={`heading3 is-centered ${pageStyles.sectionHeading3}`}>Fill Your Table</h3>
-            <p>
-              Looking for people to play with? Need a Game Master to help run your game? Our community matching tools
-              will help you find people and get playing quickly.
-            </p>
-          </div>
-        </section>
-
-        <a href="https://app.playrole.com/signup" className={`button ${pageStyles.button}`}>
-          Sign Up
-        </a>
 
         <h2 className={`heading1 is-centered red ${pageStyles.sectionHeading1}`}>Loved by Players and Game Masters</h2>
 
@@ -368,6 +342,35 @@ export default ({ data }) => {
                 </div>
               </Panel>
             </div>
+          </div>
+
+          <a href="https://app.playrole.com/signup" className={`button ${pageStyles.button}`}>
+            Sign Up
+          </a>
+        </section>
+
+        <h2 className={`heading1 is-centered red ${pageStyles.sectionHeading1}`}>Coming Soon...</h2>
+
+        <section className={pageStyles.section}>
+          <div className={styles.pillar}>
+            <div className={styles.pillarImageContainer}>
+              <div className={`${styles.pillarImage} ${styles.imagePlay}`} />
+            </div>
+            <h3 className={`heading3 is-centered ${pageStyles.sectionHeading3}`}>Play Something New</h3>
+            <p>
+              It doesn’t matter if you’re a brand new player or a seasoned veteran. The Role marketplace will help you
+              discover, explore, and learn new games that meet your style.
+            </p>
+          </div>
+          <div className={styles.pillar}>
+            <div className={styles.pillarImageContainer}>
+              <div className={`${styles.pillarImage} ${styles.imageTable}`} />
+            </div>
+            <h3 className={`heading3 is-centered ${pageStyles.sectionHeading3}`}>Fill Your Table</h3>
+            <p>
+              Looking for people to play with? Need a Game Master to help run your game? Our community matching tools
+              will help you find people and get playing quickly.
+            </p>
           </div>
         </section>
       </div>

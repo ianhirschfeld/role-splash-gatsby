@@ -112,6 +112,7 @@
 .games {
   max-width: 1168px;
   margin: 0 auto;
+  padding: 0 18px;
 }
 
 .games-image-container {
@@ -239,7 +240,33 @@
   width: 100%;
 }
 
+@media only screen and (max-width: 768px) {
+  .testimonials-column {
+    width: 50%;
+  }
+
+  .testimonials-column:last-child {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 667px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .image-grid-primary {
+    grid-column-end: span 1;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-column {
+    width: 100%;
+  }
+
   .pillar {
     width: 100%;
     max-width: 380px;

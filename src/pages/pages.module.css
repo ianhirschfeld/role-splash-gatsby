@@ -101,4 +101,8 @@
   .section {
     font-size: 1.6rem;
   }
+
+  .logo-subheading {
+    font-size: 2rem !important;
+  }
 }
