@@ -9,7 +9,7 @@ featuredImage: ../images/changelog/2021-03-19.jpg
 
 #### New Templates
 
-Thank you to [Kienna Shaw](https://twitter.com/KiennaS) and [Lauren Bryant-Monk](https://twitter.com/jl_nicegirl), creators of the TTRPG Safety Toolkit, for putting together the official Role Safety Templates. All accounts will automatically come with three templates to help organize and think about safety when playing on Role. The following templates are now available for everyone:
+Thank you to [Kienna Shaw](https://twitter.com/KiennaS) and [Lauren Bryant-Monk](https://twitter.com/jl_nicegirl), curators of the TTRPG Safety Toolkit, for putting together the official Role Safety Templates. All accounts will automatically come with three templates to help organize and think about safety when playing on Role. The following templates are now available for everyone:
 
 - [Safety / Support Tool Info Sheet](https://app.playrole.com/sheet-templates/52788ff6-safety-support-tool-info-sheet/save)
 - [Lines and Veils](https://app.playrole.com/sheet-templates/77d600a2-lines-and-veils/save)
