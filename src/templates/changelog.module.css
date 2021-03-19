@@ -10,7 +10,7 @@
 }
 
 .feature-image {
-  margin: 18px 0;
+  margin: 18px 0 36px;
   border-radius: 18px;
   overflow: hidden;
 }
@@ -23,6 +23,10 @@
 .content h3 {
   margin: 18px 0;
   font-size: 2rem;
+}
+
+.content h4 {
+  margin: 18px 0;
 }
 
 .content ul {

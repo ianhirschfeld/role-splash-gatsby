@@ -21,7 +21,22 @@ module.exports = {
         path: `${__dirname}/src/changelog/`,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 940,
+              quality: 100,
+              backgroundColor: 'transparent',
+              linkImagesToOriginal: false,
+            },
+          },
+        ],
+      },
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     `gatsby-plugin-react-svg`,

@@ -167,6 +167,11 @@ a:focus {
   left: 0;
 }
 
+.gatsby-resp-image-wrapper {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
 /* TODO: ================ */
 
 @media only screen and (max-width: 667px) {
