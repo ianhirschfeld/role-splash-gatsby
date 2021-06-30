@@ -28,10 +28,10 @@ export default ({ data }) => {
           <div className={pageStyles.sectionContent}>
             <h2 className={`heading2 is-centered ${pageStyles.sectionHeading2}`}>About the Company</h2>
             <p className={pageStyles.leftContent}>
-              Role is dedicated to building the tools & game experiences for the next generation of online narrative
-              play. We facilitate powerful collaborative storytelling and genuine social interaction by driving the
-              evolution of digital role playing games. From high-quality video chat to code-free content creation for
-              all, we aim to put people first and accelerate global imagination. Come tell your story with us!
+              Role is dedicated to building tools & game experiences for the next generation of online narrative play.
+              We facilitate powerful collaborative storytelling and genuine social interaction by driving the evolution
+              of digital role playing games. From high-quality video chat to code-free content creation for all, we aim
+              to put people first and accelerate global imagination. Come tell your story with us!
             </p>
           </div>
         </section>
@@ -137,7 +137,7 @@ export default ({ data }) => {
                 Collaborate with the product team to conceptualize new features and improvements for the Role platform.
               </li>
               <li>Develop and test features that push what it means to play tabletop RPGs online.</li>
-              <li>Researching new frameworks and SDKs to enhance our tech stack and workflows.</li>
+              <li>Research new frameworks and SDKs to enhance our tech stack and workflows.</li>
             </ul>
             <p>
               <strong>What we're looking for</strong>
