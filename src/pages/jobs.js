@@ -28,11 +28,10 @@ export default ({ data }) => {
           <div className={pageStyles.sectionContent}>
             <h2 className={`heading2 is-centered ${pageStyles.sectionHeading2}`}>About the Company</h2>
             <p className={pageStyles.leftContent}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eleifend quam ipsum, vel pretium dolor
-              posuere vel. Integer elementum neque elit, non blandit lacus ullamcorper eget. Vestibulum finibus finibus
-              condimentum. Etiam ullamcorper sed metus vel interdum. Maecenas vitae laoreet felis, a venenatis justo.
-              Nunc porttitor egestas enim, at sagittis arcu facilisis non. Pellentesque dolor eros, imperdiet ut ligula
-              vitae, egestas porta ligula. Etiam a odio vitae ex pellentesque porta non eget est.
+              Role is dedicated to building the tools & game experiences for the next generation of online narrative
+              play. We facilitate powerful collaborative storytelling and genuine social interaction by driving the
+              evolution of digital role playing games. From high-quality video chat to code-free content creation for
+              all, we aim to put people first and accelerate global imagination. Come tell your story with us!
             </p>
           </div>
         </section>
@@ -41,12 +40,11 @@ export default ({ data }) => {
           <div className={pageStyles.sectionContent}>
             <h2 className={`heading2 is-centered ${pageStyles.sectionHeading2}`}>About the Team</h2>
             <p className={pageStyles.leftContent}>
-              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer et
-              semper orci. Aenean iaculis at dui eget ornare. Morbi turpis lacus, finibus mollis mi vel, lacinia
-              ultrices mauris. Nulla hendrerit metus dolor, ac aliquam justo dignissim non. Vivamus ut odio justo. Nulla
-              facilisi. Quisque pellentesque justo nec tellus euismod, vitae sodales dolor lacinia. Integer lobortis non
-              dolor non venenatis. Donec at semper felis. Nunc vitae augue dictum, ultricies sem vitae, laoreet turpis.
-              In vitae blandit odio, id mattis ex.
+              We’re a small dedicated team of passionate storytellers, game creators, and digital natives. We believe in
+              putting kindness first, and treating everyone as an expert. Collaboration is at the core of what we do,
+              and we operate with transparency and consensus when making decisions together. We don’t shy away from big
+              challenges, and always believe there is an accessible elegant solution we will find together. We love what
+              we do, and we pour that joy into everything we build with our community.
             </p>
           </div>
         </section>
@@ -58,9 +56,25 @@ export default ({ data }) => {
               We’re actively hiring for two open positions. We’re especially interested in candidates who bring a
               diverse personal and professional perspective to the team. As we strive to serve an inclusive community of
               players across all cultures & identities, we want our team to reflect those communities as well. Check out
-              the details of the open positions below and send us an email to{' '}
-              <a href="mailto:jobs@playrole.com">jobs@playrole.com</a> with your resume and and any relevant links.
+              the details on open positions below. If you're interested in joining our team, please send your resume and
+              any relevant links to <a href="mailto:jobs@playrole.com">jobs@playrole.com</a>.
             </p>
+            <p className={pageStyles.leftContent}>
+              <strong>
+                These are full-time positions. You must be a U.S. Citizen working within +/- 3 hours of Pacific Time.
+              </strong>
+            </p>
+            <p className={pageStyles.leftContent}>
+              <strong>Perks & Benefits</strong>
+            </p>
+            <ul className={pageStyles.leftContent}>
+              <li>We are a 100% remote company. Our team members work from wherever is best for them!</li>
+              <li>Equity in Role! Each employee owns a piece of the company as we grow.</li>
+              <li>We help cover health, dental, vision, and life insurance.</li>
+              <li>
+                Untracked PTO! We believe in trusting our team to communicate and manage their own time away from work.
+              </li>
+            </ul>
           </div>
 
           <div className={styles.jobContent}>
@@ -92,15 +106,11 @@ export default ({ data }) => {
               <strong>What we're looking for</strong>
             </p>
             <ul>
-              <li>Fill out...</li>
-            </ul>
-            <p>
-              <strong>Perks & Benefits</strong>
-            </p>
-            <ul>
-              <li>We are a 100% remote company. Work from wherever you want.</li>
-              <li>Equity in Role! Own a piece of the company as we grow.</li>
-              <li>Health, dental, vision, and life insurance.</li>
+              <li>2+ years of marketing and customer growth experience for consumer technologies and/or gaming.</li>
+              <li>
+                Familiarity with common social media platforms and their advertising tools: Facebook, Twitter, TikTok,
+                etc.
+              </li>
             </ul>
             <a
               href="mailto:jobs@playrole.com?subject=Marketing%20and%20Growth%20Manager"
@@ -112,7 +122,7 @@ export default ({ data }) => {
           </div>
 
           <div className={styles.jobContent}>
-            <h3 className={`${styles.jobTitle} teal`}>Software Engineer</h3>
+            <h3 className={`${styles.jobTitle} teal`}>Frontend Software Engineer</h3>
             <p>
               Come build the tools that dreams are made of! We’re looking for a frontend developer with React experience
               who’s excited to dive in and create the innovative gameplay and creation systems this community deserves.
@@ -133,26 +143,17 @@ export default ({ data }) => {
               <strong>What we're looking for</strong>
             </p>
             <ul>
-              <li>2+ years of software engineering frontend experience.</li>
+              <li>2+ years of frontend software engineering experience.</li>
               <li>1+ years of React experience.</li>
               <li>Familiarity working with REST APIs.</li>
               <li>Familiarity with web accessibility best practices.</li>
-              <li>U.S. Citizens working +/- 3 hours of Pacific Time.</li>
-            </ul>
-            <p>
-              <strong>Perks & Benefits</strong>
-            </p>
-            <ul>
-              <li>We are a 100% remote company. Work from wherever you want.</li>
-              <li>Equity in Role! Own a piece of the company as we grow.</li>
-              <li>Health, dental, vision, and life insurance.</li>
             </ul>
             <a
-              href="mailto:jobs@playrole.com?subject=Software%20Engineer"
+              href="mailto:jobs@playrole.com?subject=Frontend%20Software%20Engineer"
               className="button"
               style={{ display: 'inline-block' }}
             >
-              Apply for Software Engineer
+              Apply for Frontend Software Engineer
             </a>
           </div>
         </section>
