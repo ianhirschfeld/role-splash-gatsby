@@ -119,7 +119,7 @@ a:focus {
 }
 
 .button {
-  height: 36px;
+  min-height: 36px;
   padding: 0 18px;
   display: block;
   border-radius: 18px;
