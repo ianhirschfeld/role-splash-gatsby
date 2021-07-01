@@ -42,9 +42,9 @@ export default ({ data }) => {
             <p className={pageStyles.leftContent}>
               We’re a small dedicated team of passionate storytellers, game creators, and digital natives. We believe in
               putting kindness first, and treating everyone as an expert. Collaboration is at the core of what we do,
-              and we operate with transparency and consensus when making decisions together. We don’t shy away from big
-              challenges, and always believe there is an accessible elegant solution we will find together. We love what
-              we do, and we pour that joy into everything we build with our community.
+              and we operate with transparency and consensus when making decisions together. We don't shy away from big
+              challenges as we always believe there is an elegant solution we will find together. We love what we do,
+              and we pour that joy into everything we build with our community.
             </p>
           </div>
         </section>
