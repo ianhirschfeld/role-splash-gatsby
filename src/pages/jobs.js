@@ -124,10 +124,10 @@ export default ({ data }) => {
           <div className={styles.jobContent}>
             <h3 className={`${styles.jobTitle} teal`}>Frontend Software Engineer</h3>
             <p>
-              Come build the tools that dreams are made of! We’re looking for a frontend developer with React experience
-              who’s excited to dive in and create the innovative gameplay and creation systems this community deserves.
-              We’re looking for someone with game and/or tech platform experience, with a passion for storytelling and
-              collaborative play.
+              Come build the tools that dreams are made of! We’re looking for a mid or senior level frontend developer
+              with React experience who’s excited to dive in and create the innovative gameplay and creation systems
+              this community deserves. We’re looking for someone with game and/or tech platform experience, with a
+              passion for storytelling and collaborative play.
             </p>
             <p>
               <strong>What you'll be doing</strong>
